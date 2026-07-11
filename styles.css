@@ -112,7 +112,8 @@ a:hover { color: var(--accent); }
 .hero__title span { display: block; }
 .hero__lead { font-size: clamp(1.05rem, 1.8vw, 1.25rem); font-weight: 600; color: var(--ink); margin: 0 0 14px; }
 .hero__lead .accent { color: var(--accent); }
-.hero__sub { font-size: 1.02rem; margin: 0 0 38px; max-width: 42ch; }
+.hero__sub { font-size: 1.02rem; margin: 0 0 16px; max-width: 46ch; }
+.hero__note { font-size: .92rem; color: var(--ink-3); margin: 0 0 36px; }
 .hero__actions { display: flex; gap: 14px; flex-wrap: wrap; }
 .hero__media { position: relative; }
 .hero__media img { width: 100%; object-fit: cover; aspect-ratio: 4 / 5; object-position: 50% 16%; }
@@ -133,15 +134,40 @@ a:hover { color: var(--accent); }
 
 /* ---------- O mně ---------- */
 .about { padding: 128px 0; }
-.about__intro { display: grid; grid-template-columns: .82fr 1fr; gap: 68px; align-items: center; max-width: 1000px; margin: 0 auto; }
-.about__photo img { width: 100%; object-fit: cover; aspect-ratio: 4 / 5; }
-.about__copy h2 { font-size: clamp(1.9rem, 4vw, 2.9rem); text-transform: uppercase; margin: 0 0 26px; }
-.about__copy p { font-size: 1.12rem; line-height: 1.8; color: var(--ink-2); margin: 0 0 20px; }
-.about__copy p:last-child { margin-bottom: 0; }
-.about__copy strong { color: var(--ink); font-weight: 700; }
 
-.gallup { max-width: var(--measure); margin: 64px auto 0; border-top: 1px solid var(--line); padding-top: 52px; text-align: center; }
-.gallup h3 { margin: 0 0 26px; font-size: .74rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--ink-3); }
+/* Sekce „Co pomáhám řešit" — foto vlevo (plný sloupec), vpravo nadpis + intro + seznam */
+.solve { display: grid; grid-template-columns: .78fr 1.22fr; gap: 64px; align-items: stretch; }
+.solve__photo { position: relative; min-height: 100%; }
+.solve__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+.about__statement { font-size: clamp(1.9rem, 3.6vw, 2.7rem); text-transform: none; letter-spacing: -.02em; line-height: 1.1; margin: 0 0 24px; }
+.solve__main > p { font-size: 1.06rem; line-height: 1.75; color: var(--ink-2); margin: 0 0 18px; }
+.solve__main strong { color: var(--ink); font-weight: 700; }
+
+.solve__list { display: flex; flex-direction: column; margin-top: 44px; }
+.sol { display: grid; grid-template-columns: auto 1fr; gap: 30px; padding: 34px 0; border-top: 1px solid var(--line-2); }
+.sol:first-child { border-top: 1px solid var(--ink); }
+.sol:last-child { border-bottom: 1px solid var(--line-2); }
+.sol__num { font-size: .78rem; font-weight: 700; letter-spacing: .2em; color: var(--accent); padding-top: 5px; }
+.sol h3 { font-size: 1.2rem; text-transform: uppercase; letter-spacing: -.01em; margin: 0 0 14px; }
+.sol p { font-size: .98rem; line-height: 1.7; color: var(--ink-2); margin: 0 0 12px; }
+.sol p:last-child { margin-bottom: 0; }
+
+/* Sekce „O mně — moje cesta" (šedý pruh) */
+.about-me { padding: 128px 0; background: var(--bg-alt); }
+.about-me__head { margin-bottom: 52px; }
+.about-me__head h2 { font-size: clamp(1.9rem, 4vw, 2.9rem); text-transform: uppercase; margin: 0; }
+.about-me__grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; align-items: start; }
+.about-me__photo img { width: 100%; object-fit: cover; aspect-ratio: 4 / 5; object-position: 50% 28%; }
+.about-me__lead { font-size: clamp(1.35rem, 2.2vw, 1.75rem); font-weight: 700; color: var(--ink); line-height: 1.22; letter-spacing: -.01em; margin: 0 0 24px; }
+.about-me__body p { font-size: 1.06rem; line-height: 1.8; color: var(--ink-2); margin: 0 0 20px; }
+.about-me__body p:last-child { margin-bottom: 0; }
+.about-me__body strong { color: var(--ink); font-weight: 700; }
+
+/* Gallup silné stránky — jemný doplněk pod fotkou */
+.strengths { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line-2); }
+.strengths__label { display: block; font-size: .66rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 12px; }
+.strengths__list { font-size: .96rem; font-weight: 600; color: var(--ink); letter-spacing: .01em; margin: 0 0 10px; }
+.strengths__note { font-size: .88rem; line-height: 1.6; color: var(--ink-3); margin: 0; }
 .gallup__pills { list-style: none; display: flex; flex-wrap: wrap; gap: 0; justify-content: center; padding: 0; margin: 0 0 26px; border: 1px solid var(--line); }
 .pill {
   display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px;
@@ -154,7 +180,7 @@ a:hover { color: var(--accent); }
 .gallup__badge { display: inline-block; font-size: .74rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin: 0; }
 
 /* ---------- Média / timeline ---------- */
-.media { background: var(--bg-alt); padding: 128px 0; }
+.media { background: var(--bg); padding: 128px 0; }
 .timeline { list-style: none; max-width: 780px; margin: 0 auto; padding: 0; }
 .timeline__year {
   font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; color: var(--ink); letter-spacing: -.03em;
@@ -175,7 +201,7 @@ a.tl-item__title:hover { color: var(--accent); text-decoration: none; }
 .tl-item:hover .tl-item__arrow { color: var(--accent); transform: translateX(5px); }
 
 /* ---------- Záliby ---------- */
-.hobbies { padding: 128px 0; }
+.hobbies { padding: 128px 0; background: var(--bg-alt); }
 .feature { display: grid; gap: 56px; align-items: center; margin-bottom: 64px; }
 .feature--cars { grid-template-columns: 1fr 1fr; }
 .feature__text h3 { font-size: clamp(1.6rem, 3vw, 2.2rem); text-transform: uppercase; margin: 0 0 22px; }
@@ -250,8 +276,13 @@ a.tl-item__title:hover { color: var(--accent); text-decoration: none; }
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; gap: 44px; }
   .hero__media { order: -1; max-width: 360px; }
-  .about__intro { grid-template-columns: 1fr; gap: 36px; max-width: 460px; }
-  .about__photo { max-width: 300px; }
+  .solve { grid-template-columns: 1fr; gap: 40px; }
+  .solve__photo { position: static; max-width: 360px; }
+  .solve__photo img { position: static; aspect-ratio: 4 / 5; height: auto; }
+  .solve__list { margin-top: 32px; }
+  .sol { gap: 22px; }
+  .about-me__grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-me__photo { max-width: 380px; }
   .feature--cars, .story { grid-template-columns: 1fr; }
   .social__grid { grid-template-columns: repeat(2, 1fr); }
 }
