@@ -115,8 +115,7 @@ a:hover { color: var(--accent); }
 .hero__sub { font-size: 1.02rem; margin: 0 0 38px; max-width: 42ch; }
 .hero__actions { display: flex; gap: 14px; flex-wrap: wrap; }
 .hero__media { position: relative; }
-.hero__media img { width: 100%; object-fit: cover; aspect-ratio: 4 / 5; object-position: 78% 30%; filter: grayscale(100%); transition: filter .5s var(--ease); }
-.hero__media img:hover { filter: grayscale(0); }
+.hero__media img { width: 100%; object-fit: cover; aspect-ratio: 4 / 5; object-position: 50% 16%; }
 
 /* ---------- Social ---------- */
 .social { background: var(--bg); padding: 96px 0; border-bottom: 1px solid var(--line); }
@@ -134,11 +133,12 @@ a:hover { color: var(--accent); }
 
 /* ---------- O mně ---------- */
 .about { padding: 128px 0; }
-.about__head { text-align: center; margin-bottom: 44px; }
-.about__head h2 { font-size: clamp(1.9rem, 4vw, 2.9rem); text-transform: uppercase; }
-.about__body { max-width: var(--measure); margin: 0 auto; font-size: 1.16rem; line-height: 1.8; color: var(--ink-2); }
-.about__body p { margin: 0 0 22px; }
-.about__body strong { color: var(--ink); font-weight: 700; }
+.about__intro { display: grid; grid-template-columns: .82fr 1fr; gap: 68px; align-items: center; max-width: 1000px; margin: 0 auto; }
+.about__photo img { width: 100%; object-fit: cover; aspect-ratio: 4 / 5; }
+.about__copy h2 { font-size: clamp(1.9rem, 4vw, 2.9rem); text-transform: uppercase; margin: 0 0 26px; }
+.about__copy p { font-size: 1.12rem; line-height: 1.8; color: var(--ink-2); margin: 0 0 20px; }
+.about__copy p:last-child { margin-bottom: 0; }
+.about__copy strong { color: var(--ink); font-weight: 700; }
 
 .gallup { max-width: var(--measure); margin: 64px auto 0; border-top: 1px solid var(--line); padding-top: 52px; text-align: center; }
 .gallup h3 { margin: 0 0 26px; font-size: .74rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--ink-3); }
@@ -188,8 +188,8 @@ a.tl-item__title:hover { color: var(--accent); text-decoration: none; }
 /* Galerie */
 .gallery { position: relative; margin: 0 0 64px; }
 .gallery__track { display: flex; gap: 2px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 0 16px; scrollbar-width: thin; }
-.gallery__track img { height: 320px; width: auto; object-fit: cover; scroll-snap-align: center; flex: 0 0 auto; cursor: pointer; filter: grayscale(100%); transition: filter .4s var(--ease); }
-.gallery__track img:hover { filter: grayscale(0); }
+.gallery__track img { height: 320px; width: auto; object-fit: cover; scroll-snap-align: center; flex: 0 0 auto; cursor: pointer; transition: transform .4s var(--ease); }
+.gallery__track img:hover { transform: scale(1.015); }
 .gallery__nav {
   position: absolute; top: 50%; transform: translateY(-50%);
   width: 48px; height: 48px; border-radius: 0; border: 1px solid var(--ink); cursor: pointer;
@@ -250,6 +250,8 @@ a.tl-item__title:hover { color: var(--accent); text-decoration: none; }
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; gap: 44px; }
   .hero__media { order: -1; max-width: 360px; }
+  .about__intro { grid-template-columns: 1fr; gap: 36px; max-width: 460px; }
+  .about__photo { max-width: 300px; }
   .feature--cars, .story { grid-template-columns: 1fr; }
   .social__grid { grid-template-columns: repeat(2, 1fr); }
 }
