@@ -1,5 +1,5 @@
 /* ============================================================
-   Michalis Katapodis — web logika (vanilla JS, bez závislostí)
+   Michalis Katapodis - web logika (vanilla JS, bez závislostí)
    ============================================================ */
 (function () {
   'use strict';
@@ -132,47 +132,59 @@
     });
   });
 
-  /* ---------- Galerie z cest: automaticky načte images/travel/1.jpg, 2.jpg, … ---------- */
-  var track = document.getElementById('galleryTrack');
-  var gallery = document.getElementById('gallery');
-  var galleryEmpty = document.getElementById('galleryEmpty');
-  if (track) {
-    var MAX = 30;
-    var pending = MAX;
-    var found = 0;
-    for (var i = 1; i <= MAX; i++) {
-      (function (n) {
-        var img = new Image();
-        img.onload = function () {
-          img.className = 'g-loaded';
-          img.dataset.n = n;
-          track.appendChild(img);
-          found++;
-          done();
-        };
-        img.onerror = done;
-        img.alt = 'Michalis Katapodis — cestování ' + n;
-        img.loading = 'lazy';
-        img.src = 'images/travel/' + n + '.jpg';
-      })(i);
+  /* ---------- Fotogalerie (hory & cesty) + lightbox ---------- */
+  var photogrid = document.getElementById('photogrid');
+  if (photogrid && window.GALLERY && window.GALLERY.length) {
+    var G = window.GALLERY;
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lightboxImg');
+    var lbCounter = document.getElementById('lightboxCounter');
+    var current = 0;
+
+    G.forEach(function (item, idx) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'photogrid__item';
+      btn.setAttribute('aria-label', 'Zvětšit fotku ' + (idx + 1));
+      var img = new Image();
+      img.src = item.t;
+      img.alt = 'Michalis Katapodis - hory a cesty ' + (idx + 1);
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      btn.appendChild(img);
+      btn.addEventListener('click', function () { openLightbox(idx); });
+      photogrid.appendChild(btn);
+    });
+
+    function show(idx) {
+      current = (idx + G.length) % G.length;
+      lbImg.src = G[current].f;
+      if (lbCounter) lbCounter.textContent = (current + 1) + ' / ' + G.length;
     }
-    function done() {
-      if (--pending > 0) return;
-      Array.prototype.slice.call(track.children)
-        .sort(function (a, b) { return (+a.dataset.n) - (+b.dataset.n); })
-        .forEach(function (n) { track.appendChild(n); });
-      if (found > 0) {
-        gallery.hidden = false;
-        if (galleryEmpty) galleryEmpty.hidden = true;
-        setupGalleryNav();
-      }
+    function openLightbox(idx) {
+      show(idx);
+      lb.classList.add('is-open');
+      lb.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
     }
-    function setupGalleryNav() {
-      var prev = gallery.querySelector('.gallery__nav--prev');
-      var next = gallery.querySelector('.gallery__nav--next');
-      var step = function () { return Math.max(track.clientWidth * 0.8, 260); };
-      if (prev) prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
-      if (next) next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+    function closeLightbox() {
+      lb.classList.remove('is-open');
+      lb.setAttribute('aria-hidden', 'true');
+      lbImg.removeAttribute('src');
+      document.body.style.overflow = '';
+    }
+
+    if (lb) {
+      lb.querySelector('.lightbox__close').addEventListener('click', closeLightbox);
+      lb.querySelector('.lightbox__nav--prev').addEventListener('click', function () { show(current - 1); });
+      lb.querySelector('.lightbox__nav--next').addEventListener('click', function () { show(current + 1); });
+      lb.addEventListener('click', function (e) { if (e.target === lb) closeLightbox(); });
+      document.addEventListener('keydown', function (e) {
+        if (!lb.classList.contains('is-open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        else if (e.key === 'ArrowLeft') show(current - 1);
+        else if (e.key === 'ArrowRight') show(current + 1);
+      });
     }
   }
 })();

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Michalis Katapodis — Pomáhám tvořit úspěšné e-shopy v 3IT.cz</title>
-  <meta name="description" content="Michalis Katapodis — spolumajitel 3IT, 19 let v e-commerce. Pomáhám firmám růst byznysově i technicky. Články, přednášky a osobní příběhy." />
+  <title>Michalis Katapodis - Pomáhám tvořit úspěšné e-shopy v 3IT.cz</title>
+  <meta name="description" content="Michalis Katapodis - spolumajitel 3IT, 19 let v e-commerce. Pomáhám firmám růst byznysově i technicky. Články, přednášky a osobní příběhy." />
   <meta name="author" content="Michalis Katapodis" />
   <link rel="canonical" href="https://katapodis.cz/" />
 
@@ -18,7 +18,7 @@
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231d1b18'/%3E%3Ctext x='50' y='71' font-size='58' font-family='Georgia,serif' font-weight='600' fill='%23f7f4ef' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E" />
   <link rel="preload" href="assets/fonts/inter-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="styles.css?v=20260712b" />
+  <link rel="stylesheet" href="styles.css?v=20260712e" />
 </head>
 <body>
   <!-- ============ NAV ============ -->
@@ -171,7 +171,7 @@
         <div class="section-head">
           <span class="kicker">Média &amp; Tvorba</span>
           <h2>Články a příspěvky</h2>
-          <p class="section-sub">Výběr toho, co jsem napsal nebo kde jsem se objevil — chronologicky, od nejnovějšího.</p>
+          <p class="section-sub">Výběr toho, co jsem napsal nebo kde jsem se objevil - chronologicky, od nejnovějšího.</p>
         </div>
 
         <div class="media-filter" id="media-filter" role="group" aria-label="Filtr obsahu">
@@ -188,36 +188,35 @@
     <section class="hobbies" id="zaliby">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Jak dobíjím baterky</span>
-          <h2>Když zrovna netvořím e-shopy</h2>
+          <span class="kicker">Záliby</span>
+          <h2>Takto dobíjím své baterky</h2>
+          <p class="section-sub">Nejlepší nápady totiž nevznikají u pracovního stolu.</p>
         </div>
 
         <!-- Cestování -->
         <div class="feature feature--travel">
           <div class="feature__text">
-            <h3>Cestování &amp; Hory</h3>
-            <p>Rád chodím po horách, dobývám vrcholy a objevuju svět s přáteli. Minimálně na dva dny jsem navštívil <strong>33 zemí</strong>. Cestování mě nabíjí energií a dává mi nové perspektivy — díky němu si vážím všeho, co u nás v ČR máme.</p>
-            <p>Fyzická kondice je pro mě základ produktivity a mentálního zdraví, proto mě pravidelně potkáte v jednom z fitness center v Ostravě‑Porubě.</p>
+            <h3>Cestování a hory</h3>
+            <p>Změna prostředí, fyzický výkon a hluboké rozhovory s přáteli mě neuvěřitelně posouvají. Pomáhají mi získat odstup, podívat se na věci z jiné perspektivy a vracet se do práce s čistou hlavou a novou energií.</p>
+            <p>Dosud jsem navštívil <strong>33 zemí</strong>. Měl jsem štěstí poznat s přáteli například Sokotru, Maroko, Gruzii, Arménii, Jordánsko i desítky evropských států. Každé místo mi ukázalo jiný způsob života, kulturu a pohled na svět.</p>
+            <p>O víkendech mě ale nejčastěji potkáte mnohem blíž - v Beskydech na Lysé hoře nebo ve slovenských horách.</p>
+            <p>Nejvýše jsem zatím vystoupal na <strong>Jabal Toubkal</strong> v Maroku, nejvyšší horu severní Afriky, která dosahuje výšky <strong>4 167 metrů nad mořem</strong>.</p>
+            <p>K horám se u mě postupně přidalo i otužování. S kolegy pravidelně absolvujeme výšlap na Lysou horu v mrazu jen v botách a kraťasech.</p>
+            <p>Byl jsem součástí největšího českého otužileckého výšlapu, zapsaného v <strong>České knize rekordů</strong> a doloženého certifikátem.</p>
+            <p>A když zrovna nejsem v horách, třikrát týdně mě můžete ráno před prací potkat ve fitku v Ostravě-Porubě. Pohyb je pro mě důležitým zdrojem energie, disciplíny a psychické odolnosti.</p>
           </div>
         </div>
 
-        <!-- Galerie z cest -->
-        <div class="gallery" id="gallery" hidden>
-          <div class="gallery__track" id="galleryTrack"></div>
-          <button class="gallery__nav gallery__nav--prev" aria-label="Předchozí">&#8249;</button>
-          <button class="gallery__nav gallery__nav--next" aria-label="Další">&#8250;</button>
-        </div>
-        <p class="gallery__empty" id="galleryEmpty">
-          Fotky z cest sem přibydou — stačí je nahrát do <code>images/travel/</code> (pojmenované <code>1.jpg</code>, <code>2.jpg</code> …).
-        </p>
+        <!-- Fotogalerie z hor a cest -->
+        <div class="photogrid" id="photogrid"></div>
 
         <!-- Auta -->
         <div class="feature feature--cars">
           <div class="feature__text">
             <h3><span class="asterisk">✷</span> Auta</h3>
-            <p>Od dětství jsem miloval auta. Taťka si mě vždy posadil na klín u řidiče — já ještě nedosáhl na pedály a při pomalé jízdě po parkovišti nadšeně točil volantem naší stodvacítky.</p>
+            <p>Od dětství jsem miloval auta. Taťka si mě vždy posadil na klín u řidiče - já ještě nedosáhl na pedály a při pomalé jízdě po parkovišti nadšeně točil volantem naší stodvacítky.</p>
             <p>Řidičák jsem si udělal a pak čekal na narozeniny, abych si ho mohl vyzvednout. Vždycky, když naši odjeli a nechali auto na parkovišti, koupili jsme s bráchou za peníze na nákup benzín… a frrr…</p>
-            <p>Odmalička jsem snil o autě na víkendy, na zábavu a radost. Když nám s bráchou bylo kolem 5–7 let, do krve jsme se hádali, jestli je lepší Ferrari, nebo Porsche. Já argumentoval, že s Porsche se dá jezdit všude. A pak to přišlo — jedno jsem si koupil.</p>
+            <p>Odmalička jsem snil o autě na víkendy, na zábavu a radost. Když nám s bráchou bylo kolem 5–7 let, do krve jsme se hádali, jestli je lepší Ferrari, nebo Porsche. Já argumentoval, že s Porsche se dá jezdit všude. A pak to přišlo - jedno jsem si koupil.</p>
             <p>Zbožňuju komunitu lidí kolem téhle značky. Společná setkání a projížďky s kamarády mě nabíjejí energií, kterou pak používám k posunu naší firmy 3IT.cz.</p>
           </div>
           <div class="feature__video">
@@ -234,9 +233,9 @@
         <div class="story">
           <div class="story__text">
             <h3>Natáčení s Mírou Hejdou</h3>
-            <p>Jednoho dne jsem na Instagramu zareagoval na příspěvek Míry Hejdy. Ozvala se produkční, že mě vybrali k natáčení dalšího dílu — až pak jsem zjistil, že to byla soutěž. Dostal jsem instrukce, ať přijedu se svým sporťákem do Sedlčan.</p>
-            <p>Čekal jsem projížďku se supersporty… a přišlo úplně jiné překvapení: <strong>rallycross za volantem Felicie</strong>. Nejvíc TOP zážitek! Doporučuju — vezměte pár kamarádů a jeďte tam.</p>
-            <p>A finále? Přijel závodní speciál divize Supercars — <strong>Audi S2</strong> — a svezení s pilotem, čtyřnásobným vítězem České trofeje. Byl to druhý moment v životě, kdy jsem se jako spolujezdec fakt bál (poprvé to bylo v Lamborghini Huracán, 325 km/h v Německu). Míro a týme, díky za tenhle zážitek!</p>
+            <p>Jednoho dne jsem na Instagramu zareagoval na příspěvek Míry Hejdy. Ozvala se produkční, že mě vybrali k natáčení dalšího dílu - až pak jsem zjistil, že to byla soutěž. Dostal jsem instrukce, ať přijedu se svým sporťákem do Sedlčan.</p>
+            <p>Čekal jsem projížďku se supersporty… a přišlo úplně jiné překvapení: <strong>rallycross za volantem Felicie</strong>. Nejvíc TOP zážitek! Doporučuju - vezměte pár kamarádů a jeďte tam.</p>
+            <p>A finále? Přijel závodní speciál divize Supercars - <strong>Audi S2</strong> - a svezení s pilotem, čtyřnásobným vítězem České trofeje. Byl to druhý moment v životě, kdy jsem se jako spolujezdec fakt bál (poprvé to bylo v Lamborghini Huracán, 325 km/h v Německu). Míro a týme, díky za tenhle zážitek!</p>
           </div>
           <div class="story__video">
             <div class="video video--placeholder" data-yt="ciAkg8MmnlA">
@@ -279,7 +278,19 @@
     </div>
   </footer>
 
-  <script src="media-data.js?v=20260712b"></script>
-  <script src="main.js?v=20260712b"></script>
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Zavřít">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Předchozí fotka">&#8249;</button>
+    <figure class="lightbox__stage">
+      <img class="lightbox__img" id="lightboxImg" alt="" />
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Další fotka">&#8250;</button>
+    <div class="lightbox__counter" id="lightboxCounter"></div>
+  </div>
+
+  <script src="media-data.js?v=20260712e"></script>
+  <script src="gallery-data.js?v=20260712e"></script>
+  <script src="main.js?v=20260712e"></script>
 </body>
 </html>
