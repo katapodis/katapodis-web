@@ -132,59 +132,78 @@
     });
   });
 
-  /* ---------- Fotogalerie (hory & cesty) + lightbox ---------- */
-  var photogrid = document.getElementById('photogrid');
-  if (photogrid && window.GALLERY && window.GALLERY.length) {
-    var G = window.GALLERY;
+  /* ---------- Fotogalerie (cesty + auta) se sdíleným lightboxem ---------- */
+  (function () {
     var lb = document.getElementById('lightbox');
+    if (!lb) return;
     var lbImg = document.getElementById('lightboxImg');
     var lbCounter = document.getElementById('lightboxCounter');
+    var active = [];
     var current = 0;
 
-    G.forEach(function (item, idx) {
-      var btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'photogrid__item';
-      btn.setAttribute('aria-label', 'Zvětšit fotku ' + (idx + 1));
-      var img = new Image();
-      img.src = item.t;
-      img.alt = 'Michalis Katapodis - hory a cesty ' + (idx + 1);
-      img.loading = 'lazy';
-      img.decoding = 'async';
-      btn.appendChild(img);
-      btn.addEventListener('click', function () { openLightbox(idx); });
-      photogrid.appendChild(btn);
-    });
-
     function show(idx) {
-      current = (idx + G.length) % G.length;
-      lbImg.src = G[current].f;
-      if (lbCounter) lbCounter.textContent = (current + 1) + ' / ' + G.length;
+      if (!active.length) return;
+      current = (idx + active.length) % active.length;
+      lbImg.src = active[current].f;
+      if (lbCounter) lbCounter.textContent = (current + 1) + ' / ' + active.length;
     }
-    function openLightbox(idx) {
+    function open(arr, idx) {
+      active = arr;
       show(idx);
       lb.classList.add('is-open');
       lb.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
     }
-    function closeLightbox() {
+    function close() {
       lb.classList.remove('is-open');
       lb.setAttribute('aria-hidden', 'true');
       lbImg.removeAttribute('src');
       document.body.style.overflow = '';
     }
 
-    if (lb) {
-      lb.querySelector('.lightbox__close').addEventListener('click', closeLightbox);
-      lb.querySelector('.lightbox__nav--prev').addEventListener('click', function () { show(current - 1); });
-      lb.querySelector('.lightbox__nav--next').addEventListener('click', function () { show(current + 1); });
-      lb.addEventListener('click', function (e) { if (e.target === lb) closeLightbox(); });
-      document.addEventListener('keydown', function (e) {
-        if (!lb.classList.contains('is-open')) return;
-        if (e.key === 'Escape') closeLightbox();
-        else if (e.key === 'ArrowLeft') show(current - 1);
-        else if (e.key === 'ArrowRight') show(current + 1);
-      });
+    var PREVIEW = 12; // počet dlaždic v náhledu
+    function build(gridId, arr) {
+      var grid = document.getElementById(gridId);
+      if (!grid || !arr || !arr.length) return;
+      var showAll = arr.length <= PREVIEW;
+      var tiles = showAll ? arr.length : PREVIEW;
+      for (var idx = 0; idx < tiles; idx++) {
+        var isMore = !showAll && idx === PREVIEW - 1;
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'photogrid__item' + (isMore ? ' photogrid__item--more' : '');
+        btn.setAttribute('aria-label', isMore ? 'Zobrazit celou galerii' : 'Zvětšit fotku ' + (idx + 1));
+        var img = new Image();
+        img.src = arr[idx].t;
+        img.alt = 'Michalis Katapodis - fotka ' + (idx + 1);
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        btn.appendChild(img);
+        if (isMore) {
+          var label = document.createElement('span');
+          label.className = 'photogrid__more-label';
+          label.textContent = '+' + (arr.length - (PREVIEW - 1));
+          btn.appendChild(label);
+        }
+        (function (i) {
+          btn.addEventListener('click', function () { open(arr, i); });
+        })(idx);
+        grid.appendChild(btn);
+      }
     }
-  }
+
+    build('photogrid', window.GALLERY);
+    build('photogrid-auta', window.GALLERY_AUTA);
+
+    lb.querySelector('.lightbox__close').addEventListener('click', close);
+    lb.querySelector('.lightbox__nav--prev').addEventListener('click', function () { show(current - 1); });
+    lb.querySelector('.lightbox__nav--next').addEventListener('click', function () { show(current + 1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!lb.classList.contains('is-open')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') show(current - 1);
+      else if (e.key === 'ArrowRight') show(current + 1);
+    });
+  })();
 })();
