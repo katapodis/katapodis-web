@@ -91,7 +91,7 @@ a:hover { color: var(--accent); }
 .nav__brand:hover { color: var(--ink); }
 .nav__brand-last { color: var(--accent); }
 .nav__links { display: flex; align-items: center; gap: 34px; }
-.nav__links a { color: var(--ink); font-weight: 600; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; }
+.nav__links a { position: relative; color: var(--ink); font-weight: 600; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; }
 .nav__links a:hover { color: var(--accent); }
 .nav__cta { border: 1px solid var(--ink); padding: 11px 20px; }
 .nav__cta:hover { background: var(--ink); color: #fff !important; }
@@ -502,11 +502,37 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
   .media-filter { margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px; }
 }
 
-/* ---- Telefony: jemné odhalení bloků při scrollu (bez omezení pohybu vypnuto) ---- */
-@media (max-width: 600px) and (prefers-reduced-motion: no-preference) {
-  .rvl { opacity: 0; transform: translateY(16px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
-  .rvl.is-in { opacity: 1; transform: none; }
+/* ============================================================
+   Pohyb / animace (desktop i mobil, respektuje prefers-reduced-motion)
+   ============================================================ */
+/* Odhalení bloků při scrollu — skrytý stav platí jen když běží JS
+   (.reveal-ready), takže bez JS zůstane obsah plně viditelný */
+.reveal-ready .rvl { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal-ready .rvl.is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Vstupní animace hero po načtení — jemný fade-up se staggerem */
+  @keyframes heroIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+  .hero__eyebrow, .hero__title, .hero__lead, .hero__sub, .hero__note, .hero__actions, .hero__media {
+    animation: heroIn .8s var(--ease) both;
+  }
+  .hero__eyebrow { animation-delay: .05s; }
+  .hero__title   { animation-delay: .12s; }
+  .hero__media   { animation-delay: .18s; }
+  .hero__lead    { animation-delay: .24s; }
+  .hero__sub     { animation-delay: .30s; }
+  .hero__note    { animation-delay: .36s; }
+  .hero__actions { animation-delay: .42s; }
 }
+
+/* Jemné podtržení odkazů v hlavní navigaci (desktop) */
+.nav__links a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -7px; height: 1px;
+  background: var(--accent); transform: scaleX(0); transform-origin: left;
+  transition: transform .28s var(--ease);
+}
+.nav__links a:hover::after { transform: scaleX(1); }
+.nav__cta::after { display: none; }
 
 /* ---- Dotyková zařízení: hmatová odezva místo hoveru ---- */
 @media (hover: none) {

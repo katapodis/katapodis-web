@@ -259,39 +259,42 @@
     }, { passive: true });
   })();
 
-  /* ---------- Mobil: odhalení bloků při scrollu + tlačítko nahoru ---------- */
+  /* ---------- Odhalení bloků při scrollu (desktop i mobil) ---------- */
+  (function () {
+    if (!window.matchMedia('(prefers-reduced-motion: no-preference)').matches) return;
+    if (!('IntersectionObserver' in window)) return;
+    // skrytý výchozí stav .rvl se aktivuje až tady → bez JS zůstane obsah viditelný
+    document.documentElement.classList.add('reveal-ready');
+    var SEL = '.section-head, .scard, .solve__photo, .solve__main, .sol, ' +
+      '.about-me__photo, .about-me__body, .mcard, .media-more, .feature__text, ' +
+      '.travel-stats, .photogrid, .story__text, .cta__inner';
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting || en.boundingClientRect.top < 0) {
+          en.target.classList.add('is-in');
+          io.unobserve(en.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
+    document.querySelectorAll(SEL).forEach(function (el) {
+      el.classList.add('rvl');
+      io.observe(el);
+    });
+  })();
+
+  /* ---------- Mobil: tlačítko „zpět nahoru" ---------- */
   (function () {
     if (!window.matchMedia('(max-width: 600px)').matches) return;
-
-    if ('IntersectionObserver' in window) {
-      var SEL = '.section-head, .scard, .solve__photo, .solve__main, .sol, ' +
-        '.about-me__photo, .about-me__body, .mcard, .media-more, .feature__text, ' +
-        '.travel-stats, .photogrid, .story__text, .cta__inner';
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-          if (en.isIntersecting || en.boundingClientRect.top < 0) {
-            en.target.classList.add('is-in');
-            io.unobserve(en.target);
-          }
-        });
-      }, { rootMargin: '0px 0px -7% 0px', threshold: 0.05 });
-      document.querySelectorAll(SEL).forEach(function (el) {
-        el.classList.add('rvl');
-        io.observe(el);
-      });
-    }
-
     var toTop = document.getElementById('toTop');
-    if (toTop) {
-      var shown = false;
-      window.addEventListener('scroll', function () {
-        var want = window.scrollY > window.innerHeight * 2;
-        if (want !== shown) { shown = want; toTop.classList.toggle('is-visible', want); }
-      }, { passive: true });
-      toTop.addEventListener('click', function () {
-        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
-      });
-    }
+    if (!toTop) return;
+    var shown = false;
+    window.addEventListener('scroll', function () {
+      var want = window.scrollY > window.innerHeight * 2;
+      if (want !== shown) { shown = want; toTop.classList.toggle('is-visible', want); }
+    }, { passive: true });
+    toTop.addEventListener('click', function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
   })();
 })();
