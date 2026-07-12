@@ -15,11 +15,13 @@
     toggle.addEventListener('click', function () {
       var open = links.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', String(open));
+      document.documentElement.classList.toggle('no-scroll', open);
     });
     links.addEventListener('click', function (e) {
       if (e.target.tagName === 'A') {
         links.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', 'false');
+        document.documentElement.classList.remove('no-scroll');
       }
     });
   }
@@ -107,6 +109,41 @@
           card.classList.toggle('mcard--hidden', !show);
         });
       });
+    }
+
+    /* ---------- Mobil: dávkování karet („Zobrazit další") ---------- */
+    if (window.matchMedia('(max-width: 600px)').matches) {
+      var CAP = 10;
+      var expanded = false;
+      var moreBtn = document.createElement('button');
+      moreBtn.type = 'button';
+      moreBtn.className = 'btn btn--ghost media-more';
+      mediaGrid.parentNode.insertBefore(moreBtn, mediaGrid.nextSibling);
+
+      function applyCap() {
+        if (expanded) return;
+        var visible = 0, capped = 0;
+        mediaGrid.querySelectorAll('.mcard').forEach(function (card) {
+          if (card.classList.contains('mcard--hidden')) { card.classList.remove('mcard--capped'); return; }
+          visible++;
+          var over = visible > CAP;
+          card.classList.toggle('mcard--capped', over);
+          if (over) capped++;
+        });
+        moreBtn.style.display = capped ? '' : 'none';
+        moreBtn.textContent = capped === 1 ? 'Zobrazit 1 další'
+          : capped < 5 ? 'Zobrazit další ' + capped
+          : 'Zobrazit dalších ' + capped;
+      }
+      moreBtn.addEventListener('click', function () {
+        expanded = true;
+        mediaGrid.querySelectorAll('.mcard--capped').forEach(function (c) { c.classList.remove('mcard--capped'); });
+        moreBtn.remove();
+      });
+      if (filterBar) filterBar.addEventListener('click', function (e) {
+        if (e.target.closest('.media-filter__btn')) applyCap();
+      });
+      applyCap();
     }
   }
 
@@ -205,5 +242,56 @@
       else if (e.key === 'ArrowLeft') show(current - 1);
       else if (e.key === 'ArrowRight') show(current + 1);
     });
+
+    /* Swipe gesta: vlevo/vpravo = další/předchozí, tah dolů = zavřít */
+    var tX = 0, tY = 0, tOn = false;
+    lb.addEventListener('touchstart', function (e) {
+      if (e.touches.length !== 1) { tOn = false; return; }
+      tOn = true; tX = e.touches[0].clientX; tY = e.touches[0].clientY;
+    }, { passive: true });
+    lb.addEventListener('touchend', function (e) {
+      if (!tOn) return;
+      tOn = false;
+      var dx = e.changedTouches[0].clientX - tX;
+      var dy = e.changedTouches[0].clientY - tY;
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.4) show(dx < 0 ? current + 1 : current - 1);
+      else if (dy > 72 && dy > Math.abs(dx) * 1.4) close();
+    }, { passive: true });
+  })();
+
+  /* ---------- Mobil: odhalení bloků při scrollu + tlačítko nahoru ---------- */
+  (function () {
+    if (!window.matchMedia('(max-width: 600px)').matches) return;
+
+    if ('IntersectionObserver' in window) {
+      var SEL = '.section-head, .scard, .solve__photo, .solve__main, .sol, ' +
+        '.about-me__photo, .about-me__body, .mcard, .media-more, .feature__text, ' +
+        '.travel-stats, .photogrid, .story__text, .cta__inner';
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting || en.boundingClientRect.top < 0) {
+            en.target.classList.add('is-in');
+            io.unobserve(en.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -7% 0px', threshold: 0.05 });
+      document.querySelectorAll(SEL).forEach(function (el) {
+        el.classList.add('rvl');
+        io.observe(el);
+      });
+    }
+
+    var toTop = document.getElementById('toTop');
+    if (toTop) {
+      var shown = false;
+      window.addEventListener('scroll', function () {
+        var want = window.scrollY > window.innerHeight * 2;
+        if (want !== shown) { shown = want; toTop.classList.toggle('is-visible', want); }
+      }, { passive: true });
+      toTop.addEventListener('click', function () {
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      });
+    }
   })();
 })();

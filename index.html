@@ -45,7 +45,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
   <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high" />
-  <link rel="stylesheet" href="styles.css?v=20260712k" />
+  <link rel="stylesheet" href="styles.css?v=20260712l" />
 
   <!-- Strukturovaná data (Schema.org) -->
   <script type="application/ld+json">
@@ -998,7 +998,7 @@
       <div class="container about__inner">
         <div class="solve">
           <div class="solve__photo">
-            <img src="images/about.webp" alt="Michalis Katapodis při práci" />
+            <img src="images/about.webp" alt="Michalis Katapodis při práci" loading="lazy" decoding="async" />
           </div>
 
           <div class="solve__main">
@@ -1050,7 +1050,7 @@
         <div class="about-me__grid">
           <div class="about-me__side">
             <div class="about-me__photo">
-              <img src="images/about-me.webp" alt="Michalis Katapodis" />
+              <img src="images/about-me.webp" alt="Michalis Katapodis" loading="lazy" decoding="async" />
             </div>
             <div class="strengths">
               <span class="strengths__label">Gallup silné stránky</span>
@@ -1108,6 +1108,12 @@
             <p>K horám se u mě postupně přidalo i otužování. S kolegy pravidelně absolvujeme výšlap na Lysou horu v mrazu jen v botách a kraťasech.</p>
             <p>Byl jsem součástí největšího českého otužileckého výšlapu, zapsaného v <strong>České knize rekordů</strong> a doloženého certifikátem.</p>
             <p>A když zrovna nejsem v horách, třikrát týdně mě můžete ráno před prací potkat ve fitku v Ostravě-Porubě. Pohyb je pro mě důležitým zdrojem energie, disciplíny a psychické odolnosti.</p>
+            <!-- Souhrn čísel — jen telefony (aria-hidden: duplikuje text výše) -->
+            <div class="travel-stats" aria-hidden="true">
+              <div class="tstat"><strong>33</strong><span>zemí světa</span></div>
+              <div class="tstat"><strong>4 167 m</strong><span>Jabal Toubkal</span></div>
+              <div class="tstat"><strong>1×</strong><span>Kniha rekordů</span></div>
+            </div>
           </div>
         </div>
 
@@ -1198,9 +1204,12 @@
     <div class="lightbox__counter" id="lightboxCounter"></div>
   </div>
 
-  <script src="media-data.js?v=20260712k"></script>
-  <script src="gallery-data.js?v=20260712k"></script>
-  <script src="gallery-auta-data.js?v=20260712k"></script>
-  <script src="main.js?v=20260712k"></script>
+  <!-- Zpět nahoru — jen telefony (CSS) -->
+  <button type="button" class="to-top" id="toTop" aria-label="Zpět nahoru">&uarr;</button>
+
+  <script src="media-data.js?v=20260712l"></script>
+  <script src="gallery-data.js?v=20260712l"></script>
+  <script src="gallery-auta-data.js?v=20260712l"></script>
+  <script src="main.js?v=20260712l"></script>
 </body>
 </html>
