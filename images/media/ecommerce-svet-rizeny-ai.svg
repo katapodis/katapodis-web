@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c1720"/><stop offset="1" stop-color="#100c14"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#g)"/>
+<rect x="56" y="58" width="44" height="4" fill="#c81a34"/>
+<text x="56" y="94" fill="#c81a34" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="3.5">PODCAST</text>
+<text x="56" y="192" fill="#f4f4f5" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700"><tspan x="56" dy="0">Jak se připravit na</tspan><tspan x="56" dy="50">e-commerce svět řízený AI?</tspan></text>
+<text x="56" y="410" fill="#6d6a73" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" letter-spacing="2.5">MICHALIS KATAPODIS</text>
+</svg>

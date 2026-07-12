@@ -25,80 +25,88 @@
   }
 
   /* ---------- E-mail (jednoduchá ochrana proti scraperům) ---------- */
-  var mailUser = 'michalis.katapodis';
-  var mailHost = '3it.cz';
-  var mail = mailUser + '@' + mailHost;
+  var mail = 'michalis.katapodis' + '@' + '3it.cz';
   document.querySelectorAll('[data-email]').forEach(function (el) {
     el.setAttribute('href', 'mailto:' + mail);
   });
 
-  /* ---------- Média: články (chronologicky, seskupené po letech) ---------- */
-  var articles = [
-    { d: '2025-03-11', t: 'Kam kráčí česká e-commerce podle Petry Dolejšové', s: '3IT.cz', u: 'https://www.3it.cz/kam-kraci-ceska-e-commerce-podle-petry-dolejsove' },
-    { d: '2025-02-12', t: 'Co přinesl 3IT rok 2024', s: '3IT.cz', u: 'https://www.3it.cz/co-prinesl-3it-rok-2024' },
-    { d: '2024-11-12', t: 'Kam kráčí česká e-commerce podle Honzy Kvasničky', s: '3IT.cz', u: 'https://www.3it.cz/kam-kraci-ceska-e-commerce-podle-honzy-kvasnicky' },
-    { d: '2024-09-30', t: 'Kam kráčí česká e-commerce podle Jirky Kratochvíla', s: '3IT.cz', u: 'https://www.3it.cz/kam-kraci-ceska-e-commerce-podle-jirky-kratochvila' },
-    { d: '2024-07-12', t: 'Kam kráčí česká e-commerce podle Marka Kršky', s: '3IT.cz', u: 'https://www.3it.cz/kam-kraci-ceska-e-commerce-podle-marka-krsky' },
-    { d: '2022-10-20', t: 'Hrdinové podnikání', s: '3IT.cz', u: 'https://www.3it.cz/hrdinove-podnikani' },
-    { d: '2022-06-24', t: 'Refaktor: jak a proč s ním pracujeme?', s: '3IT.cz', u: 'https://www.3it.cz/refaktor-jak-a-proc-s-nim-pracujeme' },
-    { d: '2021-09-30', t: 'Propojení e-shopu s ERP systémy Solitea Money', s: '3IT.cz', u: 'https://www.3it.cz/propojeni-e-shopu-s-erp-systemy-solitea-money/' },
-    { d: '2020-10-09', t: 'E-commerce nůžky se otevřely', s: 'MladýPodnikatel', u: 'https://mladypodnikatel.cz/e-commerce-nuzky-se-otevrely-t39700' },
-    { d: '2019-12-09', t: 'Našli jsme svatý grál pro naše vývojáře i klienty', s: '3IT.cz', u: 'https://www.3it.cz/nasli-jsme-svaty-gral-pro-nase-vyvojare-i-klienty/' },
-    { d: '2019-07-02', t: 'Automatizované sklady v dnešní eCommerce', s: '3IT.cz', u: 'https://www.3it.cz/automatizovane-sklady-v-dnesni-ecommerce/' },
-    { d: '2014-09-15', t: 'Vyplatí se dnes ještě zakládat e-shop?', s: 'MladýPodnikatel', u: 'https://mladypodnikatel.cz/vyplati-se-zakladat-e-shop-t14118' },
-    // bez ověřeného data (v originále chybné 10. 10. 2000) — datum skryto
-    { d: null, t: 'Businessman a řemeslník: dva přístupy v podnikání', s: 'MladýPodnikatel', u: 'https://mladypodnikatel.cz/businessman-remeslnik-pristupy-podnikani-t31802' },
-    { d: null, t: 'Nikdy nedovolte, abyste byli z velké části závislí na jednom klientovi', s: 'MladýPodnikatel', u: 'https://mladypodnikatel.cz/michalis-katapodis-nikdy-nedovolte-abyste-byli-z-velke-casti-zavisli-na-jednom-klientovi-t11459' },
-    { d: null, t: 'Jaké jsou nejdůležitější vlastnosti online podnikatelů?', s: 'MladýPodnikatel', u: 'https://mladypodnikatel.cz/vlastnosti-online-podnikatelu-t29040' },
-    { d: null, t: '7 důvodů, proč se nejčastěji zpožďují e-commerce projekty', s: '3IT.cz', u: 'https://www.3it.cz/7-duvodu-proc-se-nejcasteji-zpozduji-e-commerce-projekty/' },
-    { d: null, t: 'Sdílení zkušeností a opatření našich klientů s COVID-19', s: '3IT.cz', u: 'https://www.3it.cz/sdileni-zkusenosti-a-opatreni-nasich-klientu-covid-19/' },
-    { d: null, t: 'Od Belbina ke Gallupu: jak jsme objevili superschopnosti našeho týmu', s: '3IT.cz', u: 'https://www.3it.cz/od-belbina-ke-gallupu-jak-jsme-objevili-superschopnosti-naseho-tymu' }
-  ];
+  /* ---------- Média & Tvorba: grid karet (data z media-data.js) ---------- */
+  var mediaGrid = document.getElementById('media-grid');
+  if (mediaGrid && window.MEDIA_ITEMS) {
+    var TYPE_LABELS = {
+      clanek: 'Článek', rozhovor: 'Rozhovor', podcast: 'Podcast',
+      video: 'Video', prednaska: 'Přednáška', prezentace: 'Prezentace'
+    };
+    function esc(s) {
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
 
-  function czDate(iso) {
-    var p = iso.split('-');
-    return parseInt(p[2], 10) + '. ' + parseInt(p[1], 10) + '. ' + p[0];
-  }
-
-  function articleNode(a) {
-    var li = document.createElement('li');
-    li.className = 'tl-item';
-    var srcClass = a.s === '3IT.cz' ? ' tl-item__src--3it' : '';
-    var meta = '<span class="tl-item__src' + srcClass + '">' + a.s + '</span>';
-    if (a.d) meta = '<span>' + czDate(a.d) + '</span>' + meta;
-    li.innerHTML =
-      '<div class="tl-item__body">' +
-        '<a class="tl-item__title" href="' + a.u + '" target="_blank" rel="noopener">' + a.t + '</a>' +
-        '<div class="tl-item__meta">' + meta + '</div>' +
-      '</div>' +
-      '<span class="tl-item__arrow" aria-hidden="true">→</span>';
-    return li;
-  }
-
-  var timeline = document.getElementById('timeline');
-  if (timeline) {
-    var dated = articles.filter(function (a) { return a.d; })
-      .sort(function (x, y) { return y.d < x.d ? -1 : 1; });
-    var undated = articles.filter(function (a) { return !a.d; });
-
-    var currentYear = null;
-    dated.forEach(function (a) {
-      var y = a.d.slice(0, 4);
-      if (y !== currentYear) {
-        currentYear = y;
-        var h = document.createElement('li');
-        h.className = 'timeline__year';
-        h.textContent = y;
-        timeline.appendChild(h);
-      }
-      timeline.appendChild(articleNode(a));
+    // řazení vždy dle publishedAt (od nejnovějšího)
+    var items = window.MEDIA_ITEMS.slice().sort(function (a, b) {
+      return a.publishedAt < b.publishedAt ? 1 : (a.publishedAt > b.publishedAt ? -1 : 0);
     });
-    if (undated.length) {
-      var h2 = document.createElement('li');
-      h2.className = 'timeline__year';
-      h2.textContent = 'Starší články';
-      timeline.appendChild(h2);
-      undated.forEach(function (a) { timeline.appendChild(articleNode(a)); });
+    // deduplikace distribučních kopií stejného obsahu (dle cílové URL)
+    var seen = {};
+    items = items.filter(function (it) {
+      if (seen[it.url]) return false;
+      seen[it.url] = 1; return true;
+    });
+
+    items.forEach(function (it, i) {
+      var date = it.datePrecision === 'year' ? it.publishedAt.slice(0, 4) : it.dateLabel;
+      var eager = i < 6; // první 6 karet bez lazy
+      var card = document.createElement('a');
+      card.className = 'mcard';
+      card.setAttribute('data-type', it.type);
+      card.href = it.url;
+      card.target = '_blank';
+      card.rel = 'noopener noreferrer';
+      card.innerHTML =
+        '<div class="mcard__media">' +
+          '<img src="' + esc(it.image) + '" alt="' + esc(it.title) + '" width="800" height="450" ' +
+            'loading="' + (eager ? 'eager' : 'lazy') + '" decoding="async" />' +
+        '</div>' +
+        '<div class="mcard__body">' +
+          '<div class="mcard__meta">' +
+            '<span class="mcard__type mcard__type--' + it.type + '">' + (TYPE_LABELS[it.type] || it.type) + '</span>' +
+            '<span class="mcard__date">' + esc(date) + '</span>' +
+          '</div>' +
+          '<h3 class="mcard__title">' + esc(it.title) + '</h3>' +
+          '<span class="mcard__medium">' + esc(it.medium) + '</span>' +
+        '</div>';
+      mediaGrid.appendChild(card);
+    });
+
+    /* ---------- Filtr „Zobrazit" podle typu ---------- */
+    var filterBar = document.getElementById('media-filter');
+    if (filterBar) {
+      var ORDER = ['clanek', 'rozhovor', 'podcast', 'video', 'prednaska', 'prezentace'];
+      var PLURAL = {
+        clanek: 'Články', rozhovor: 'Rozhovory', podcast: 'Podcasty',
+        video: 'Videa', prednaska: 'Přednášky', prezentace: 'Prezentace'
+      };
+      var present = {};
+      items.forEach(function (it) { present[it.type] = 1; });
+      var filters = ['all'].concat(ORDER.filter(function (t) { return present[t]; }));
+      filterBar.innerHTML =
+        '<span class="media-filter__label">Zobrazit</span>' +
+        filters.map(function (t) {
+          return '<button type="button" class="media-filter__btn' + (t === 'all' ? ' is-active' : '') +
+            '" data-filter="' + t + '">' + (t === 'all' ? 'Vše' : PLURAL[t]) + '</button>';
+        }).join('');
+      filterBar.addEventListener('click', function (e) {
+        var btn = e.target.closest('.media-filter__btn');
+        if (!btn) return;
+        var f = btn.getAttribute('data-filter');
+        filterBar.querySelectorAll('.media-filter__btn').forEach(function (b) {
+          b.classList.toggle('is-active', b === btn);
+        });
+        mediaGrid.querySelectorAll('.mcard').forEach(function (card) {
+          var show = f === 'all' || card.getAttribute('data-type') === f;
+          card.classList.toggle('mcard--hidden', !show);
+        });
+      });
     }
   }
 
@@ -150,7 +158,6 @@
     }
     function done() {
       if (--pending > 0) return;
-      // seřadit podle čísla (onload může doběhnout v jiném pořadí)
       Array.prototype.slice.call(track.children)
         .sort(function (a, b) { return (+a.dataset.n) - (+b.dataset.n); })
         .forEach(function (n) { track.appendChild(n); });
