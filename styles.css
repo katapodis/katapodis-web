@@ -308,6 +308,8 @@ a:hover { color: var(--accent); }
 /* ============================================================
    Responsive
    ============================================================ */
+
+/* ---- Tablet (≤900) ---- */
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; gap: 44px; }
   .hero__media { order: -1; max-width: 360px; }
@@ -322,9 +324,11 @@ a:hover { color: var(--accent); }
   .social__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ---- Malý tablet / velký telefon (≤760) — rytmus sekcí + mobilní menu ---- */
 @media (max-width: 760px) {
-  .about, .media, .hobbies { padding: 88px 0; }
-  .cta { padding: 96px 0; }
+  .about, .media, .hobbies, .about-me, .social { padding: 76px 0; }
+  .cta { padding: 84px 0; }
+  .section-head { margin-bottom: 44px; }
   .nav__links {
     position: fixed; inset: 68px 0 auto 0; flex-direction: column; align-items: stretch;
     background: #fff; border-bottom: 1px solid var(--line); padding: 16px 32px 24px; gap: 0;
@@ -336,9 +340,76 @@ a:hover { color: var(--accent); }
   .nav__toggle { display: flex; }
 }
 
+/* ============================================================
+   Telefony (≤600) — vyladěná mobilní verze
+   Cíle: jméno + claim ihned viditelné (foto pod textem, kompaktní
+   čtverec), sevřenější rytmus, dvousloupcová média, palcové ovládání.
+   ============================================================ */
+@media (max-width: 600px) {
+  /* Hero: kopie první, portrét jako kompaktní čtverec pod textem */
+  .hero__inner { padding: 40px 22px 56px; gap: 34px; }
+  .hero__media { order: 0; max-width: 100%; }
+  .hero__media img { aspect-ratio: 1 / 1; height: auto; object-position: 50% 14%; }
+  .hero__eyebrow { margin-bottom: 18px; }
+  .hero__title { font-size: clamp(2.7rem, 13.5vw, 3.6rem); margin-bottom: 22px; }
+  .hero__lead { font-size: 1.12rem; }
+  .hero__sub { max-width: none; }
+  .hero__note { margin-bottom: 30px; }
+  .hero__actions { flex-direction: column; align-items: stretch; gap: 12px; }
+  .hero__actions .btn { width: 100%; }
+
+  /* Sevřenější svislý rytmus sekcí */
+  .about, .media, .hobbies, .about-me, .social { padding: 60px 0; }
+  .cta { padding: 72px 0; }
+  .section-head { margin-bottom: 32px; }
+  .section-sub { font-size: .98rem; }
+  .about-me__head { margin-bottom: 30px; }
+
+  /* „Najdete mě na" — sevřenější dlaždice */
+  .social__title { margin-bottom: 28px; }
+  .scard { padding: 26px 12px; gap: 12px; font-size: .66rem; }
+  .scard svg { width: 20px; height: 20px; }
+  .social__note { margin-top: 26px; }
+
+  /* Co řeším / O mně — text sevřeněji */
+  .about__statement { font-size: clamp(1.5rem, 6.6vw, 2rem); }
+  .solve__main > p { font-size: 1rem; }
+  .about-me__lead { font-size: clamp(1.2rem, 5.4vw, 1.5rem); }
+  .about-me__body p { font-size: 1rem; }
+
+  /* Média — dvousloupcová redakční mřížka místo dlouhého jednosloupce */
+  .media-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .mcard__body { padding: 12px 12px 14px; gap: 8px; }
+  .mcard__meta { gap: 8px; }
+  .mcard__type { font-size: .52rem; padding: 3px 6px; }
+  .mcard__date { font-size: .6rem; }
+  .mcard__title { font-size: .88rem; line-height: 1.3; }
+  .mcard__medium { font-size: .68rem; }
+  .media-filter { gap: 8px; margin-bottom: 32px; }
+  .media-filter__label { width: 100%; text-align: center; margin: 0 0 4px; }
+  .media-filter__btn { padding: 8px 13px; font-size: .68rem; }
+
+  /* Záliby — sevřenější rozestupy */
+  .hobbies .feature { gap: 30px; margin-bottom: 44px; }
+  .feature--travel { margin-bottom: 40px; }
+  .photogrid { margin: 26px 0 44px; }
+  .story { margin-top: 8px; }
+
+  /* Kontakt / CTA — tlačítka přes celou šířku pro palec */
+  .cta h2 { font-size: clamp(2rem, 8.5vw, 2.6rem); }
+  .cta p { font-size: 1.02rem; }
+  .cta__actions { flex-direction: column; align-items: stretch; margin-bottom: 26px; }
+  .cta__actions .btn { width: 100%; }
+
+  /* Patička — na střed, nezalomená natěsno */
+  .footer__inner { justify-content: center; text-align: center; }
+}
+
+/* ---- Nejmenší telefony (≤460) ---- */
 @media (max-width: 460px) {
-  .container { padding: 0 22px; }
+  .container { padding-left: 20px; padding-right: 20px; }
   .social__grid { grid-template-columns: 1fr 1fr; }
+  .hero__inner { padding-left: 20px; padding-right: 20px; }
   .gallery__track img { height: 240px; }
 }
 
