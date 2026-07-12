@@ -1,0 +1,89 @@
+# Michalis Katapodis
+
+> CEO a spolumajitel softwarové firmy 3IT. Přes 19 let se věnuje e-commerce a pomáhá středním a velkým firmám s B2C a B2B e-shopy na míru, expanzí do zahraničí a nasazením AI. Sídlí v Ostravě (Česká republika).
+
+Toto je osobní web Michalise Katapodise (https://katapodis.cz). Následující přehled je určen vyhledávačům i jazykovým modelům pro přesné a aktuální odpovědi.
+
+## O Michalisovi
+
+- **Role:** CEO a spolumajitel [3IT](https://www.3it.cz/)
+- **Zaměření:** e-commerce, B2B a B2C e-shopy na míru, expanze do zahraničí, AI v e-commerce, integrace s ERP a sklady
+- **Zkušenosti:** 19 let v e-commerce; první zakázkový web naprogramoval na gymnáziu, poté vytvořil informační systém pro cestovní kancelář a řadu dalšího komerčního SW
+- **Vzdělání:** informační technologie na VŠB - Technická univerzita Ostrava (Bc, Ing)
+- **Silné stránky (Gallup CliftonStrengths):** Woo, Individualization, Positivity, Communication, Learner
+- **Lokalita:** Ostrava, Česká republika
+
+## Co pomáhá řešit
+
+- **Expanze do zahraničí** - řešení s jedním technologickým základem, centrální správou a flexibilitou pro pravidla jednotlivých trhů (místo dalšího samostatného e-shopu pro každou zemi).
+- **B2B e-commerce** - digitalizace B2B prodeje: individuální ceny, schvalování, opakované objednávky, propojení e-shopu s ERP, sklady a podnikovými systémy.
+- **AI v e-commerce** - příprava kvalitních produktových dat, otevřených rozhraní, procesů a spolehlivého technologického základu na nový způsob, jakým budou zákazníci nakupovat.
+
+## Kontakt a sociální sítě
+
+- Web: https://katapodis.cz/
+- E-mail: michalis.katapodis@3it.cz
+- LinkedIn: https://www.linkedin.com/in/katapodis
+- Instagram: https://www.instagram.com/katapodis
+- Facebook: https://www.facebook.com/katapodis
+- Firma 3IT: https://www.3it.cz/
+
+## Média a tvorba
+
+### Články
+
+- [Je váš e-shop připraven na AI nákupy? Role UCP a ACP v nové architektuře e-commerce](https://www.3it.cz/technologie-a-vyvoj/je-vas-e-shop-pripraven-na-ai-nakupy-role-ucp-a-acp-v-nove-architekture-e-commerce/) - 3IT.cz, 26. 2. 2026
+- [E-commerce SEO v éře AI: Jak připravit e-shop na druhou půlku roku 2025](https://www.3it.cz/technologie-a-vyvoj/e-commerce-seo-v-ere-ai-jak-pripravit-e-shop-na-druhou-pulku-roku-2025/) - 3IT.cz, 28. 5. 2025
+- [Co přinesl 3IT rok 2024](https://www.3it.cz/zakulisi-3it/co-prinesl-3it-rok-2024/) - 3IT.cz, 12. 2. 2025
+- [Od Belbina ke Gallupu: Jak jsme objevili superschopnosti našeho týmu](https://www.3it.cz/procesy-a-management/od-belbina-ke-gallupu-jak-jsme-objevili-superschopnosti-naseho-tymu/) - 3IT.cz, 29. 10. 2024
+- [Hrdinové podnikání](https://www.3it.cz/konference-a-eventy/hrdinove-podnikani/) - 3IT.cz, 20. 10. 2022
+- [Refaktor: jak a proč s ním pracujeme?](https://www.3it.cz/technologie-a-vyvoj/refaktor-jak-a-proc-s-nim-pracujeme/) - 3IT.cz, 24. 6. 2022
+- [Propojení e-shopu s ERP systémy Solitea Money](https://www.3it.cz/technologie-a-vyvoj/propojeni-e-shopu-s-erp-systemy-solitea-money/) - 3IT.cz, 30. 9. 2021
+- [7 důvodů, proč se nejčastěji zpožďují e-commerce projekty](https://www.3it.cz/procesy-a-management/7-duvodu-proc-se-nejcasteji-zpozduji-e-commerce-projekty/) - 3IT.cz, 24. 9. 2020
+- [Sdílení zkušeností a opatření našich klientů během COVID-19](https://www.3it.cz/procesy-a-management/sdileni-zkusenosti-a-opatreni-nasich-klientu-covid-19/) - 3IT.cz, 31. 3. 2020
+- [Našli jsme svatý grál pro naše vývojáře i klienty](https://www.3it.cz/procesy-a-management/nasli-jsme-svaty-gral-pro-nase-vyvojare-i-klienty/) - 3IT.cz, 9. 12. 2019
+- [Automatizované sklady v dnešní e-commerce](https://www.3it.cz/procesy-a-management/automatizovane-sklady-v-dnesni-ecommerce/) - 3IT.cz, 2. 7. 2019
+
+### Rozhovory
+
+- [Jak se v IT nezbláznit z „mokré houbičky“? Proč v 3IT sázíme na Gallup](https://www.3it.cz/zakulisi-3it/jak-se-v-it-nezblaznit-z-mokre-houbicky-michalis-o-tom-proc-v-3it-sazime-na-gallup/) - 3IT.cz, 18. 6. 2026
+- [LinkedIn není jen hra pro CEO. Obsah musí řídit strategie, ne ego](https://www.3it.cz/vzdelavani/linkedin-neni-jen-hra-pro-ceo-obsah-musi-ridit-strategie-ne-ego/) - 3IT.cz, 11. 2. 2026
+- [Kam kráčí česká e-commerce podle Víta Nikoliče](https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-vita-nikolice/) - 3IT.cz, 5. 5. 2025
+- [Kam kráčí česká e-commerce podle Petry Dolejšové](https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-petry-dolejsove/) - 3IT.cz, 11. 3. 2025
+- [Kam kráčí česká e-commerce podle Honzy Kvasničky](https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-honzy-kvasnicky/) - 3IT.cz, 12. 11. 2024
+- [Kam kráčí česká e-commerce podle Jirky Kratochvíla](https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-jirky-kratochvila/) - 3IT.cz, 30. 9. 2024
+- [Kam kráčí česká e-commerce podle Marka Kršky](https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-marka-krsky/) - 3IT.cz, 12. 7. 2024
+- [O firemní kultuře v IT firmě s Michalisem Katapodisem z 3IT](https://digitaal.cz/o-firemni-kulture-v-it-firme-s-michalisem-katapodisem-z-3it/) - DIGITAAL, 24. 3. 2022
+- [Nikdy nedovolte, abyste byli z velké části závislí na jednom klientovi](https://rostecky.cz/michalis-katapodis-nikdy-nedovolte-abyste-byli-z-velke-casti-zavisli-na-jednom-klientovi-t11459) - MladýPodnikatel.cz / Rostecký, 2014
+
+### Podcasty
+
+- [Jak se připravit na e-commerce svět řízený AI?](https://socials.cz/blog/106---jak-se-pripravit-na-e-commerce-svet-rizeny-ai-michalis-katapodis-z-3it-cz) - Socials Podcast, 14. 5. 2026
+- [Jak Gallup pomohl v 3IT zlepšit komunikaci i výkon týmu](https://www.youtube.com/watch?v=IakS9cTrftk) - Sejdeme se na FRESHi, 11. 3. 2026
+- [Michalis Katapodis o budoucnosti e-commerce](https://www.youtube.com/watch?v=gMfpOzU-oiQ) - ROŽNI / Patrioti MSK, 13. 10. 2025
+- [Onlajnov: Michalis Katapodis a Lukáš Král](https://www.forendors.cz/p/a960b23cdae3c1df095aa4400e54bf3b) - Onlajnov / Forendors, 19. 4. 2024
+- [Nastavení HR procesů ve vývojářské firmě](https://podcasty.seznam.cz/podcast/nas-kmen/michalis-katapodis-3it-nastaveni-hr-procesy-ve-vyvojarske-firme-546818) - Náš Kmen / Seznam Podcasty, 21. 3. 2022
+
+### Videa
+
+- [Firemní kultura: Jak jsme přešli z rodiny na tým](https://www.youtube.com/watch?v=bC4y4Y8nCIo) - Barcamp Ostrava, 2024
+- [Z nuly do mínusu a pak strmě nahoru?](https://www.youtube.com/watch?v=jhHcdum9ZXU) - YouTube, 2020
+- [Jak vytvořit e-shop s malým rozpočtem?](https://rostecky.cz/jak-vytvorit-e-shop-t28553) - MladýPodnikatel.cz / Rostecký, 2015
+
+### Přednášky
+
+- [Motivace v podnikání po čtyřicítce. Jiná hra, jiná pravidla, stejný drive](https://www.barcampostrava.cz/) - Barcamp Ostrava, 16. 5. 2026
+- [Cesta k vašemu úspěchu](https://www.3it.cz/konference-a-eventy/fotoreport-z-konference-spolecne-tvorime-uspesne-e-shopy/) - Konference 3IT, 26. 2. 2024
+- [Jak si najít správného parťáka a nespálit se při výběru dodavatele e-shopu](https://imsraz.cz/pozor-zmena-57-sraz-bude-s-michalisem-katapodisem/) - 57. IM Sraz, 30. 5. 2018
+- [Na co si dávat pozor při tvorbě e-shopu](https://imsraz.cz/44-imsraz-a-michalis-katapodis-na-co-si-davat-pozor-pri-tvorbe-e-shopu/) - 44. IM Sraz, 28. 6. 2016
+
+### Prezentace
+
+- [Budoucnost e-shopů v ČR](https://www.slideshare.net/slideshow/budoucnost-eshop-v-r-michalis-katapodis/70135280) - WordPress konference Opava / SlideShare, 2. 12. 2016
+
+## Zájmy
+
+- **Cestování a hory:** navštívil 33 zemí (např. Sokotra, Maroko, Gruzie, Arménie, Jordánsko); nejvýše vystoupal na Jabal Toubkal v Maroku (4 167 m n. m.).
+- **Otužování:** pravidelné výšlapy na Lysou horu v mrazu; účastník největšího českého otužileckého výšlapu zapsaného v České knize rekordů.
+- **Auta:** nadšenec do aut a komunity kolem značky Porsche.
+
