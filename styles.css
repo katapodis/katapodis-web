@@ -27,6 +27,7 @@
   --line-2: #d5d3d8;
   --accent: #c81a34;        /* 3IT červená */
   --accent-dark: #a5142a;
+  --accent-bright: #ea2247; /* jasnější červená — kontrast na tmavém pozadí */
   --dark: #100c14;          /* tmavá „momentová" sekce */
   --dark-line: rgba(255,255,255,.12);
 
@@ -81,6 +82,8 @@ a:hover { color: var(--accent); }
 .btn--accent:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; }
 .cta .btn--primary { background: #fff; color: var(--ink); border-color: #fff; }
 .cta .btn--primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.cta .btn--accent { background: var(--accent-bright); border-color: var(--accent-bright); }
+.cta .btn--accent:hover { background: #fff; border-color: #fff; color: var(--accent); }
 
 /* ---------- Nav ---------- */
 .nav {
@@ -545,6 +548,7 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
   .btn--primary:active { background: var(--accent); border-color: var(--accent); }
   .btn--ghost:active { border-color: var(--ink); }
   .btn--accent:active { background: var(--accent-dark); border-color: var(--accent-dark); }
+  .cta .btn--accent:active { background: #fff; border-color: #fff; color: var(--accent); }
   .cta .btn--primary:active { background: var(--accent); border-color: var(--accent); color: #fff; }
   .mcard:active { transform: scale(.985); border-color: var(--ink); }
   .scard:active { background: var(--ink); color: #fff; }
