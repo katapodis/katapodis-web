@@ -77,6 +77,8 @@ a:hover { color: var(--accent); }
 .btn--ghost:hover { border-color: var(--ink); color: var(--ink); }
 .btn--ghost-light { background: transparent; color: #fff; border-color: var(--dark-line); }
 .btn--ghost-light:hover { border-color: #fff; }
+.btn--accent { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn--accent:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; }
 .cta .btn--primary { background: #fff; color: var(--ink); border-color: #fff; }
 .cta .btn--primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
@@ -496,6 +498,7 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
 /* ---- Nejmenší telefony (≤460) ---- */
 @media (max-width: 460px) {
   .container { padding-left: 20px; padding-right: 20px; }
+  .btn { white-space: normal; text-align: center; }
   .social__grid { grid-template-columns: 1fr 1fr; }
   .hero__inner { padding-left: 20px; padding-right: 20px; }
   .gallery__track img { height: 240px; }
@@ -541,6 +544,7 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
   .btn:active { transform: scale(.98); }
   .btn--primary:active { background: var(--accent); border-color: var(--accent); }
   .btn--ghost:active { border-color: var(--ink); }
+  .btn--accent:active { background: var(--accent-dark); border-color: var(--accent-dark); }
   .cta .btn--primary:active { background: var(--accent); border-color: var(--accent); color: #fff; }
   .mcard:active { transform: scale(.985); border-color: var(--ink); }
   .scard:active { background: var(--ink); color: #fff; }
