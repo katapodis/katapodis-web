@@ -56,7 +56,7 @@ window.MEDIA_ITEMS = [
   "dateLabel": "16. 5. 2026",
   "datePrecision": "day",
   "medium": "Barcamp Ostrava",
-  "url": "https://www.barcampostrava.cz/",
+  "url": "https://www.youtube.com/watch?v=gEyevsTSdeg",
   "image": "/images/media/motivace-v-podnikani-po-ctyricitce.webp"
  },
  {
