@@ -292,6 +292,21 @@ a:hover { color: var(--accent); }
 .video__play:hover .video__btn { transform: scale(1.08); background: var(--accent); border-color: var(--accent); }
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
+/* ---------- Časté otázky (FAQ) ---------- */
+.faq { background: var(--bg); padding: 128px 0; }
+.faq__list {
+  max-width: 880px; margin: 0 auto;
+  border-top: 1px solid var(--line);
+}
+.faq__item { border-bottom: 1px solid var(--line); padding: 30px 0; }
+.faq__q {
+  font-size: 1.12rem; line-height: 1.35; font-weight: 600;
+  letter-spacing: -.01em; margin: 0 0 12px;
+}
+.faq__a { color: var(--ink-2); margin: 0; font-size: 1rem; line-height: 1.65; }
+.faq__a a { color: var(--accent); font-weight: 600; }
+.faq__a a:hover { text-decoration: underline; }
+
 /* ---------- CTA / kontakt (tmavá sekce) ---------- */
 .cta { background: var(--dark); color: #fff; text-align: center; padding: 136px 0; }
 .cta__inner { max-width: 640px; }
@@ -410,7 +425,9 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
   .hero__actions .btn { width: 100%; }
 
   /* Sevřenější svislý rytmus sekcí */
-  .about, .media, .hobbies, .about-me, .social { padding: 60px 0; }
+  .about, .media, .hobbies, .about-me, .social, .faq { padding: 60px 0; }
+  .faq__item { padding: 24px 0; }
+  .faq__q { font-size: 1.04rem; }
   .cta { padding: 72px 0; }
   .section-head { margin-bottom: 32px; }
   .section-sub { font-size: .98rem; }

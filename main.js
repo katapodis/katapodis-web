@@ -55,7 +55,11 @@
       seen[it.url] = 1; return true;
     });
 
-    items.forEach(function (it, i) {
+    // Karty jsou předgenerované v index.html (build.py) kvůli crawlerům, které
+    // nespouštějí JS. Pokud už v DOM jsou, jen na ně navěsíme filtr.
+    var prerendered = mediaGrid.querySelector('.mcard') !== null;
+
+    if (!prerendered) items.forEach(function (it, i) {
       var date = it.datePrecision === 'year' ? it.publishedAt.slice(0, 4) : it.dateLabel;
       var eager = i < 6; // první 6 karet bez lazy
       var card = document.createElement('a');
@@ -202,6 +206,16 @@
     function build(gridId, arr) {
       var grid = document.getElementById(gridId);
       if (!grid || !arr || !arr.length) return;
+
+      // Dlaždice jsou předgenerované v index.html (build.py) - navěsíme jen lightbox.
+      var existing = grid.querySelectorAll('.photogrid__item');
+      if (existing.length) {
+        existing.forEach(function (btn, i) {
+          btn.addEventListener('click', function () { open(arr, i); });
+        });
+        return;
+      }
+
       var showAll = arr.length <= PREVIEW;
       var tiles = showAll ? arr.length : PREVIEW;
       for (var idx = 0; idx < tiles; idx++) {
@@ -267,7 +281,7 @@
     document.documentElement.classList.add('reveal-ready');
     var SEL = '.section-head, .scard, .solve__photo, .solve__main, .sol, ' +
       '.about-me__photo, .about-me__body, .mcard, .media-more, .feature__text, ' +
-      '.travel-stats, .photogrid, .story__text, .cta__inner';
+      '.travel-stats, .photogrid, .story__text, .faq__item, .cta__inner';
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting || en.boundingClientRect.top < 0) {

@@ -28,11 +28,6 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image" content="https://katapodis.cz/images/og-image-square.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="1200" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:alt" content="Michalis Katapodis, CEO 3IT" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -45,7 +40,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
   <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high" />
-  <link rel="stylesheet" href="styles.css?v=20260929b" />
+  <link rel="stylesheet" href="styles.css?v=20260929c" />
 
   <!-- Strukturovaná data (Schema.org) -->
   <script type="application/ld+json">
@@ -91,22 +86,57 @@
         }
       },
       "email": "mailto:michalis.katapodis@3it.cz",
+      "knowsLanguage": ["cs", "en"],
       "sameAs": [
         "https://www.linkedin.com/in/katapodis",
         "https://www.instagram.com/katapodis",
-        "https://www.facebook.com/katapodis"
-      ]
+        "https://www.facebook.com/katapodis",
+        "https://katapodis.3it.cz/"
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Nezávazná konzultace zdarma (30 minut)",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://cal.com/katapodis/30min",
+          "inLanguage": "cs",
+          "actionPlatform": [
+            "https://schema.org/DesktopWebPlatform",
+            "https://schema.org/MobileWebPlatform"
+          ]
+        }
+      }
     },
     {
       "@type": "Organization",
       "@id": "https://katapodis.cz/#3it",
       "name": "3IT",
+      "legalName": "3IT úspěšný eshop s.r.o.",
       "url": "https://www.3it.cz/",
       "description": "3IT staví e-commerce řešení pro střední a velké firmy, které přerostly standardní platformy - B2C a B2B e-shopy na míru, expanzi do zahraničí a integrace s ERP.",
       "areaServed": "CZ",
-      "founder": {
+      "foundingDate": "2011",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.3it.cz/wp/wp-content/uploads/2025/10/search-logo.png",
+        "width": 214,
+        "height": 214
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nad Porubkou 2353",
+        "addressLocality": "Ostrava-Poruba",
+        "addressRegion": "Moravskoslezský kraj",
+        "postalCode": "708 00",
+        "addressCountry": "CZ"
+      },
+      "employee": {
         "@id": "https://katapodis.cz/#michalis"
-      }
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/3it-sp-n-eshop-s-r-o-/",
+        "https://www.3it.cz/"
+      ]
     },
     {
       "@type": "WebSite",
@@ -114,6 +144,7 @@
       "url": "https://katapodis.cz/",
       "name": "Michalis Katapodis",
       "inLanguage": "cs",
+      "dateModified": "2026-09-29",
       "about": {
         "@id": "https://katapodis.cz/#michalis"
       },
@@ -135,7 +166,28 @@
       "mainEntity": {
         "@id": "https://katapodis.cz/#michalis"
       },
-      "inLanguage": "cs"
+      "inLanguage": "cs",
+      "dateModified": "2026-09-29"
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://katapodis.cz/#video-porsche",
+      "name": "My Car Story: Chasing Dreams - Porsche 911 Black Edition",
+      "description": "Portrét Michalise Katapodise a jeho cesty k Porsche 911 Black Edition.",
+      "uploadDate": "2022-01-12",
+      "duration": "PT1M34S",
+      "thumbnailUrl": "https://i.ytimg.com/vi/n0bbb2vHu3E/maxresdefault.jpg",
+      "embedUrl": "https://www.youtube.com/embed/n0bbb2vHu3E",
+      "url": "https://www.youtube.com/watch?v=n0bbb2vHu3E",
+      "inLanguage": "cs",
+      "about": {
+        "@id": "https://katapodis.cz/#michalis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TOM & AUTA | Daddy's Garage",
+        "url": "https://www.youtube.com/@DaddysGarageCZ"
+      }
     },
     {
       "@type": "ItemList",
@@ -151,6 +203,7 @@
             "@type": "CreativeWork",
             "name": "Bude vás AI doporučovat? Jak připravit e-shop na novou éru vyhledávání",
             "url": "https://www.advisio.cz/skoleni/bude-vas-ai-doporucovat-jak-pripravit-e-shop-na-novou-eru-vyhledavani/",
+            "image": "https://katapodis.cz/images/media/bude-vas-ai-doporucovat.webp",
             "datePublished": "2026-09-10",
             "inLanguage": "cs",
             "author": {
@@ -173,6 +226,7 @@
             "@type": "Article",
             "name": "Agentické nakupování půl roku poté: ChatGPT ukončil svůj checkout. Objednávky z AI se přesto zdvojnásobily",
             "url": "https://www.3it.cz/technologie-a-vyvoj/agenticke-nakupovani-pul-roku-pote-chatgpt-ukoncil-svuj-checkout-objednavky-z-ai-se-presto-zdvojnasobily/",
+            "image": "https://katapodis.cz/images/media/agenticke-nakupovani-pul-roku.webp",
             "datePublished": "2026-09-08",
             "inLanguage": "cs",
             "author": {
@@ -195,6 +249,7 @@
             "@type": "Article",
             "name": "ChatGPT Ads pro e-shopy: jak technicky připravit e-shop na reklamu v ChatGPT",
             "url": "https://www.3it.cz/technologie-a-vyvoj/chatgpt-ads-pro-e-shopy-jak-technicky-pripravit-e-shop-na-reklamu-v-chatgpt/",
+            "image": "https://katapodis.cz/images/media/chatgpt-ads-pro-eshopy.webp",
             "datePublished": "2026-09-01",
             "inLanguage": "cs",
             "author": {
@@ -217,6 +272,7 @@
             "@type": "Article",
             "name": "E-shop po sezóně: co opravit dřív, než přijde další nákupní špička",
             "url": "https://www.3it.cz/vzdelavani/e-shop-po-sezone-co-opravit-driv-nez-prijde-dalsi-nakupni-spicka/",
+            "image": "https://katapodis.cz/images/media/e-shop-po-sezone.webp",
             "datePublished": "2026-08-03",
             "inLanguage": "cs",
             "author": {
@@ -239,6 +295,7 @@
             "@type": "Article",
             "name": "Jak se v IT nezbláznit z „mokré houbičky“? Proč v 3IT sázíme na Gallup",
             "url": "https://www.3it.cz/zakulisi-3it/jak-se-v-it-nezblaznit-z-mokre-houbicky-michalis-o-tom-proc-v-3it-sazime-na-gallup/",
+            "image": "https://katapodis.cz/images/media/mokra-houbicka-gallup.webp",
             "datePublished": "2026-06-18",
             "inLanguage": "cs",
             "author": {
@@ -261,6 +318,7 @@
             "@type": "CreativeWork",
             "name": "Motivace v podnikání po čtyřicítce. Jiná hra, jiná pravidla, stejný drive",
             "url": "https://www.youtube.com/watch?v=gEyevsTSdeg",
+            "image": "https://katapodis.cz/images/media/motivace-v-podnikani-po-ctyricitce.webp",
             "datePublished": "2026-05-16",
             "inLanguage": "cs",
             "author": {
@@ -283,6 +341,7 @@
             "@type": "PodcastEpisode",
             "name": "Jak se připravit na e-commerce svět řízený AI?",
             "url": "https://socials.cz/blog/106---jak-se-pripravit-na-e-commerce-svet-rizeny-ai-michalis-katapodis-z-3it-cz",
+            "image": "https://katapodis.cz/images/media/ecommerce-svet-rizeny-ai.svg",
             "datePublished": "2026-05-14",
             "inLanguage": "cs",
             "author": {
@@ -305,6 +364,7 @@
             "@type": "PodcastEpisode",
             "name": "Jak Gallup pomohl v 3IT zlepšit komunikaci i výkon týmu",
             "url": "https://www.youtube.com/watch?v=IakS9cTrftk",
+            "image": "https://katapodis.cz/images/media/gallup-komunikace-vykon-tymu.webp",
             "datePublished": "2026-03-11",
             "inLanguage": "cs",
             "author": {
@@ -327,6 +387,7 @@
             "@type": "Article",
             "name": "Je váš e-shop připraven na AI nákupy? Role UCP a ACP v nové architektuře e-commerce",
             "url": "https://www.3it.cz/technologie-a-vyvoj/je-vas-e-shop-pripraven-na-ai-nakupy-role-ucp-a-acp-v-nove-architekture-e-commerce/",
+            "image": "https://katapodis.cz/images/media/ai-nakupy-ucp-acp.webp",
             "datePublished": "2026-02-26",
             "inLanguage": "cs",
             "author": {
@@ -349,6 +410,7 @@
             "@type": "Article",
             "name": "LinkedIn není jen hra pro CEO. Obsah musí řídit strategie, ne ego",
             "url": "https://www.3it.cz/vzdelavani/linkedin-neni-jen-hra-pro-ceo-obsah-musi-ridit-strategie-ne-ego/",
+            "image": "https://katapodis.cz/images/media/linkedin-strategie-ne-ego.webp",
             "datePublished": "2026-02-11",
             "inLanguage": "cs",
             "author": {
@@ -371,6 +433,7 @@
             "@type": "PodcastEpisode",
             "name": "Michalis Katapodis o budoucnosti e-commerce",
             "url": "https://www.youtube.com/watch?v=gMfpOzU-oiQ",
+            "image": "https://katapodis.cz/images/media/rozni-budoucnost-ecommerce.webp",
             "datePublished": "2025-10-13",
             "inLanguage": "cs",
             "author": {
@@ -393,6 +456,7 @@
             "@type": "Article",
             "name": "E-commerce SEO v éře AI: Jak připravit e-shop na druhou půlku roku 2025",
             "url": "https://www.3it.cz/technologie-a-vyvoj/e-commerce-seo-v-ere-ai-jak-pripravit-e-shop-na-druhou-pulku-roku-2025/",
+            "image": "https://katapodis.cz/images/media/ecommerce-seo-v-ere-ai.webp",
             "datePublished": "2025-05-28",
             "inLanguage": "cs",
             "author": {
@@ -415,6 +479,7 @@
             "@type": "Article",
             "name": "Kam kráčí česká e-commerce podle Víta Nikoliče",
             "url": "https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-vita-nikolice/",
+            "image": "https://katapodis.cz/images/media/kam-kraci-vita-nikolice.webp",
             "datePublished": "2025-05-05",
             "inLanguage": "cs",
             "author": {
@@ -437,6 +502,7 @@
             "@type": "Article",
             "name": "Kam kráčí česká e-commerce podle Petry Dolejšové",
             "url": "https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-petry-dolejsove/",
+            "image": "https://katapodis.cz/images/media/kam-kraci-petra-dolejsova.webp",
             "datePublished": "2025-03-11",
             "inLanguage": "cs",
             "author": {
@@ -459,6 +525,7 @@
             "@type": "Article",
             "name": "Co přinesl 3IT rok 2024",
             "url": "https://www.3it.cz/zakulisi-3it/co-prinesl-3it-rok-2024/",
+            "image": "https://katapodis.cz/images/media/co-prinesl-3it-rok-2024.webp",
             "datePublished": "2025-02-12",
             "inLanguage": "cs",
             "author": {
@@ -481,6 +548,7 @@
             "@type": "Article",
             "name": "Kam kráčí česká e-commerce podle Honzy Kvasničky",
             "url": "https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-honzy-kvasnicky/",
+            "image": "https://katapodis.cz/images/media/kam-kraci-honza-kvasnicka.webp",
             "datePublished": "2024-11-12",
             "inLanguage": "cs",
             "author": {
@@ -503,6 +571,7 @@
             "@type": "Article",
             "name": "Od Belbina ke Gallupu: Jak jsme objevili superschopnosti našeho týmu",
             "url": "https://www.3it.cz/procesy-a-management/od-belbina-ke-gallupu-jak-jsme-objevili-superschopnosti-naseho-tymu/",
+            "image": "https://katapodis.cz/images/media/od-belbina-ke-gallupu.webp",
             "datePublished": "2024-10-29",
             "inLanguage": "cs",
             "author": {
@@ -525,6 +594,7 @@
             "@type": "Article",
             "name": "Kam kráčí česká e-commerce podle Jirky Kratochvíla",
             "url": "https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-jirky-kratochvila/",
+            "image": "https://katapodis.cz/images/media/kam-kraci-jirka-kratochvil.webp",
             "datePublished": "2024-09-30",
             "inLanguage": "cs",
             "author": {
@@ -547,6 +617,7 @@
             "@type": "Article",
             "name": "Kam kráčí česká e-commerce podle Marka Kršky",
             "url": "https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-marka-krsky/",
+            "image": "https://katapodis.cz/images/media/kam-kraci-marek-krska.webp",
             "datePublished": "2024-07-12",
             "inLanguage": "cs",
             "author": {
@@ -569,6 +640,7 @@
             "@type": "PodcastEpisode",
             "name": "Onlajnov: Michalis Katapodis a Lukáš Král",
             "url": "https://www.forendors.cz/p/a960b23cdae3c1df095aa4400e54bf3b",
+            "image": "https://katapodis.cz/images/media/onlajnov-17.webp",
             "datePublished": "2024-04-19",
             "inLanguage": "cs",
             "author": {
@@ -591,6 +663,7 @@
             "@type": "CreativeWork",
             "name": "Cesta k vašemu úspěchu",
             "url": "https://www.3it.cz/konference-a-eventy/fotoreport-z-konference-spolecne-tvorime-uspesne-e-shopy/",
+            "image": "https://katapodis.cz/images/media/cesta-k-vasemu-uspechu.webp",
             "datePublished": "2024-02-26",
             "inLanguage": "cs",
             "author": {
@@ -613,7 +686,12 @@
             "@type": "VideoObject",
             "name": "Firemní kultura: Jak jsme přešli z rodiny na tým",
             "url": "https://www.youtube.com/watch?v=bC4y4Y8nCIo",
+            "image": "https://katapodis.cz/images/media/firemni-kultura-rodina-tym.webp",
             "datePublished": "2024",
+            "thumbnailUrl": "https://i.ytimg.com/vi/bC4y4Y8nCIo/maxresdefault.jpg",
+            "uploadDate": "2024",
+            "embedUrl": "https://www.youtube.com/embed/bC4y4Y8nCIo",
+            "description": "Firemní kultura: Jak jsme přešli z rodiny na tým - Barcamp Ostrava",
             "inLanguage": "cs",
             "author": {
               "@id": "https://katapodis.cz/#michalis"
@@ -635,6 +713,7 @@
             "@type": "Article",
             "name": "Hrdinové podnikání",
             "url": "https://www.3it.cz/konference-a-eventy/hrdinove-podnikani/",
+            "image": "https://katapodis.cz/images/media/hrdinove-podnikani.webp",
             "datePublished": "2022-10-20",
             "inLanguage": "cs",
             "author": {
@@ -657,6 +736,7 @@
             "@type": "Article",
             "name": "Refaktor: jak a proč s ním pracujeme?",
             "url": "https://www.3it.cz/technologie-a-vyvoj/refaktor-jak-a-proc-s-nim-pracujeme/",
+            "image": "https://katapodis.cz/images/media/refaktor-jak-a-proc.webp",
             "datePublished": "2022-06-24",
             "inLanguage": "cs",
             "author": {
@@ -679,6 +759,7 @@
             "@type": "Article",
             "name": "O firemní kultuře v IT firmě s Michalisem Katapodisem z 3IT",
             "url": "https://digitaal.cz/o-firemni-kulture-v-it-firme-s-michalisem-katapodisem-z-3it/",
+            "image": "https://katapodis.cz/images/media/digitaal-firemni-kultura.webp",
             "datePublished": "2022-03-24",
             "inLanguage": "cs",
             "author": {
@@ -701,6 +782,7 @@
             "@type": "PodcastEpisode",
             "name": "Nastavení HR procesů ve vývojářské firmě",
             "url": "https://podcasty.seznam.cz/podcast/nas-kmen/michalis-katapodis-3it-nastaveni-hr-procesy-ve-vyvojarske-firme-546818",
+            "image": "https://katapodis.cz/images/media/nas-kmen-hr-procesy.svg",
             "datePublished": "2022-03-21",
             "inLanguage": "cs",
             "author": {
@@ -723,6 +805,7 @@
             "@type": "Article",
             "name": "Propojení e-shopu s ERP systémy Solitea Money",
             "url": "https://www.3it.cz/technologie-a-vyvoj/propojeni-e-shopu-s-erp-systemy-solitea-money/",
+            "image": "https://katapodis.cz/images/media/erp-solitea-money.webp",
             "datePublished": "2021-09-30",
             "inLanguage": "cs",
             "author": {
@@ -745,6 +828,7 @@
             "@type": "Article",
             "name": "7 důvodů, proč se nejčastěji zpožďují e-commerce projekty",
             "url": "https://www.3it.cz/procesy-a-management/7-duvodu-proc-se-nejcasteji-zpozduji-e-commerce-projekty/",
+            "image": "https://katapodis.cz/images/media/sedm-duvodu-zpozdeni.webp",
             "datePublished": "2020-09-24",
             "inLanguage": "cs",
             "author": {
@@ -767,6 +851,7 @@
             "@type": "Article",
             "name": "Sdílení zkušeností a opatření našich klientů během COVID-19",
             "url": "https://www.3it.cz/procesy-a-management/sdileni-zkusenosti-a-opatreni-nasich-klientu-covid-19/",
+            "image": "https://katapodis.cz/images/media/sdileni-zkusenosti-covid.webp",
             "datePublished": "2020-03-31",
             "inLanguage": "cs",
             "author": {
@@ -789,7 +874,12 @@
             "@type": "VideoObject",
             "name": "Z nuly do mínusu a pak strmě nahoru?",
             "url": "https://www.youtube.com/watch?v=jhHcdum9ZXU",
+            "image": "https://katapodis.cz/images/media/z-nuly-do-minusu.webp",
             "datePublished": "2020",
+            "thumbnailUrl": "https://i.ytimg.com/vi/jhHcdum9ZXU/maxresdefault.jpg",
+            "uploadDate": "2020",
+            "embedUrl": "https://www.youtube.com/embed/jhHcdum9ZXU",
+            "description": "Z nuly do mínusu a pak strmě nahoru? - YouTube",
             "inLanguage": "cs",
             "author": {
               "@id": "https://katapodis.cz/#michalis"
@@ -811,6 +901,7 @@
             "@type": "Article",
             "name": "Našli jsme svatý grál pro naše vývojáře i klienty",
             "url": "https://www.3it.cz/procesy-a-management/nasli-jsme-svaty-gral-pro-nase-vyvojare-i-klienty/",
+            "image": "https://katapodis.cz/images/media/svaty-gral-vyvojari-klienti.webp",
             "datePublished": "2019-12-09",
             "inLanguage": "cs",
             "author": {
@@ -833,6 +924,7 @@
             "@type": "Article",
             "name": "Automatizované sklady v dnešní e-commerce",
             "url": "https://www.3it.cz/procesy-a-management/automatizovane-sklady-v-dnesni-ecommerce/",
+            "image": "https://katapodis.cz/images/media/automatizovane-sklady.webp",
             "datePublished": "2019-07-02",
             "inLanguage": "cs",
             "author": {
@@ -855,6 +947,7 @@
             "@type": "CreativeWork",
             "name": "Jak si najít správného parťáka a nespálit se při výběru dodavatele e-shopu",
             "url": "https://imsraz.cz/pozor-zmena-57-sraz-bude-s-michalisem-katapodisem/",
+            "image": "https://katapodis.cz/images/media/vyber-dodavatele-eshopu.svg",
             "datePublished": "2018-05-30",
             "inLanguage": "cs",
             "author": {
@@ -877,6 +970,7 @@
             "@type": "CreativeWork",
             "name": "Budoucnost e-shopů v ČR",
             "url": "https://www.slideshare.net/slideshow/budoucnost-eshop-v-r-michalis-katapodis/70135280",
+            "image": "https://katapodis.cz/images/media/budoucnost-eshopu-v-cr.svg",
             "datePublished": "2016-12-02",
             "inLanguage": "cs",
             "author": {
@@ -899,6 +993,7 @@
             "@type": "CreativeWork",
             "name": "Na co si dávat pozor při tvorbě e-shopu",
             "url": "https://imsraz.cz/44-imsraz-a-michalis-katapodis-na-co-si-davat-pozor-pri-tvorbe-e-shopu/",
+            "image": "https://katapodis.cz/images/media/na-co-pozor-pri-tvorbe-eshopu.svg",
             "datePublished": "2016-06-28",
             "inLanguage": "cs",
             "author": {
@@ -921,6 +1016,7 @@
             "@type": "VideoObject",
             "name": "Jak vytvořit e-shop s malým rozpočtem?",
             "url": "https://rostecky.cz/jak-vytvorit-e-shop-t28553",
+            "image": "https://katapodis.cz/images/media/jak-vytvorit-eshop-s-malym-rozpoctem.webp",
             "datePublished": "2015",
             "inLanguage": "cs",
             "author": {
@@ -943,6 +1039,7 @@
             "@type": "Article",
             "name": "Nikdy nedovolte, abyste byli z velké části závislí na jednom klientovi",
             "url": "https://rostecky.cz/michalis-katapodis-nikdy-nedovolte-abyste-byli-z-velke-casti-zavisli-na-jednom-klientovi-t11459",
+            "image": "https://katapodis.cz/images/media/nezaviset-na-jednom-klientovi.webp",
             "datePublished": "2014",
             "inLanguage": "cs",
             "author": {
@@ -1002,6 +1099,14 @@
     },
     {
       "@type": "Question",
+      "name": "Jak si domluvit konzultaci s Michalisem Katapodisem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nezávaznou třicetiminutovou konzultaci zdarma si lze rezervovat na https://cal.com/katapodis/30min. Probrat se dá stav e-shopu, plánovaná expanze i příprava na AI v e-commerce."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Jak kontaktovat Michalise Katapodise?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -1027,6 +1132,7 @@
         <a href="#o-mne">O mně</a>
         <a href="#media">Média &amp; Tvorba</a>
         <a href="#zaliby">Záliby</a>
+        <a href="#faq">FAQ</a>
         <a href="#kontakt" class="nav__cta">Kontakt</a>
       </nav>
     </div>
@@ -1051,7 +1157,7 @@
           </div>
         </div>
         <div class="hero__media">
-          <img src="images/hero.webp" alt="Michalis Katapodis" width="520" height="620" />
+          <img src="images/hero.webp" alt="Michalis Katapodis, CEO a spolumajitel softwarové firmy 3IT" width="520" height="620" fetchpriority="high" decoding="async" />
         </div>
       </div>
     </section>
@@ -1168,11 +1274,498 @@
         </div>
 
         <div class="media-filter" id="media-filter" role="group" aria-label="Filtr obsahu">
-          <!-- filtr se naplní z main.js -->
+          <span class="media-filter__label">Zobrazit</span>
+          <button type="button" class="media-filter__btn is-active" data-filter="all">Vše</button>
+          <button type="button" class="media-filter__btn" data-filter="clanek">Články</button>
+          <button type="button" class="media-filter__btn" data-filter="rozhovor">Rozhovory</button>
+          <button type="button" class="media-filter__btn" data-filter="podcast">Podcasty</button>
+          <button type="button" class="media-filter__btn" data-filter="video">Videa</button>
+          <button type="button" class="media-filter__btn" data-filter="prednaska">Přednášky</button>
+          <button type="button" class="media-filter__btn" data-filter="prezentace">Prezentace</button>
         </div>
 
         <div class="media-grid" id="media-grid">
-          <!-- karty se naplní z media-data.js + main.js -->
+          <a class="mcard" data-type="prednaska" href="https://www.advisio.cz/skoleni/bude-vas-ai-doporucovat-jak-pripravit-e-shop-na-novou-eru-vyhledavani/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/bude-vas-ai-doporucovat.webp" alt="Bude vás AI doporučovat? Jak připravit e-shop na novou éru vyhledávání" width="800" height="450" loading="eager" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--prednaska">Přednáška</span>
+                <time class="mcard__date" datetime="2026-09-10">10. 9. 2026</time>
+              </div>
+              <h3 class="mcard__title">Bude vás AI doporučovat? Jak připravit e-shop na novou éru vyhledávání</h3>
+              <span class="mcard__medium">Webinář Advisio</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/technologie-a-vyvoj/agenticke-nakupovani-pul-roku-pote-chatgpt-ukoncil-svuj-checkout-objednavky-z-ai-se-presto-zdvojnasobily/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/agenticke-nakupovani-pul-roku.webp" alt="Agentické nakupování půl roku poté: ChatGPT ukončil svůj checkout. Objednávky z AI se přesto zdvojnásobily" width="800" height="450" loading="eager" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2026-09-08">8. 9. 2026</time>
+              </div>
+              <h3 class="mcard__title">Agentické nakupování půl roku poté: ChatGPT ukončil svůj checkout. Objednávky z AI se přesto zdvojnásobily</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/technologie-a-vyvoj/chatgpt-ads-pro-e-shopy-jak-technicky-pripravit-e-shop-na-reklamu-v-chatgpt/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/chatgpt-ads-pro-eshopy.webp" alt="ChatGPT Ads pro e-shopy: jak technicky připravit e-shop na reklamu v ChatGPT" width="800" height="450" loading="eager" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2026-09-01">1. 9. 2026</time>
+              </div>
+              <h3 class="mcard__title">ChatGPT Ads pro e-shopy: jak technicky připravit e-shop na reklamu v ChatGPT</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/vzdelavani/e-shop-po-sezone-co-opravit-driv-nez-prijde-dalsi-nakupni-spicka/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/e-shop-po-sezone.webp" alt="E-shop po sezóně: co opravit dřív, než přijde další nákupní špička" width="800" height="450" loading="eager" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2026-08-03">3. 8. 2026</time>
+              </div>
+              <h3 class="mcard__title">E-shop po sezóně: co opravit dřív, než přijde další nákupní špička</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="rozhovor" href="https://www.3it.cz/zakulisi-3it/jak-se-v-it-nezblaznit-z-mokre-houbicky-michalis-o-tom-proc-v-3it-sazime-na-gallup/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/mokra-houbicka-gallup.webp" alt="Jak se v IT nezbláznit z „mokré houbičky“? Proč v 3IT sázíme na Gallup" width="800" height="450" loading="eager" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--rozhovor">Rozhovor</span>
+                <time class="mcard__date" datetime="2026-06-18">18. 6. 2026</time>
+              </div>
+              <h3 class="mcard__title">Jak se v IT nezbláznit z „mokré houbičky“? Proč v 3IT sázíme na Gallup</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="prednaska" href="https://www.youtube.com/watch?v=gEyevsTSdeg" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/motivace-v-podnikani-po-ctyricitce.webp" alt="Motivace v podnikání po čtyřicítce. Jiná hra, jiná pravidla, stejný drive" width="800" height="450" loading="eager" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--prednaska">Přednáška</span>
+                <time class="mcard__date" datetime="2026-05-16">16. 5. 2026</time>
+              </div>
+              <h3 class="mcard__title">Motivace v podnikání po čtyřicítce. Jiná hra, jiná pravidla, stejný drive</h3>
+              <span class="mcard__medium">Barcamp Ostrava</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="podcast" href="https://socials.cz/blog/106---jak-se-pripravit-na-e-commerce-svet-rizeny-ai-michalis-katapodis-z-3it-cz" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/ecommerce-svet-rizeny-ai.svg" alt="Jak se připravit na e-commerce svět řízený AI?" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--podcast">Podcast</span>
+                <time class="mcard__date" datetime="2026-05-14">14. 5. 2026</time>
+              </div>
+              <h3 class="mcard__title">Jak se připravit na e-commerce svět řízený AI?</h3>
+              <span class="mcard__medium">Socials Podcast</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="podcast" href="https://www.youtube.com/watch?v=IakS9cTrftk" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/gallup-komunikace-vykon-tymu.webp" alt="Jak Gallup pomohl v 3IT zlepšit komunikaci i výkon týmu" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--podcast">Podcast</span>
+                <time class="mcard__date" datetime="2026-03-11">11. 3. 2026</time>
+              </div>
+              <h3 class="mcard__title">Jak Gallup pomohl v 3IT zlepšit komunikaci i výkon týmu</h3>
+              <span class="mcard__medium">Sejdeme se na FRESHi</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/technologie-a-vyvoj/je-vas-e-shop-pripraven-na-ai-nakupy-role-ucp-a-acp-v-nove-architekture-e-commerce/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/ai-nakupy-ucp-acp.webp" alt="Je váš e-shop připraven na AI nákupy? Role UCP a ACP v nové architektuře e-commerce" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2026-02-26">26. 2. 2026</time>
+              </div>
+              <h3 class="mcard__title">Je váš e-shop připraven na AI nákupy? Role UCP a ACP v nové architektuře e-commerce</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="rozhovor" href="https://www.3it.cz/vzdelavani/linkedin-neni-jen-hra-pro-ceo-obsah-musi-ridit-strategie-ne-ego/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/linkedin-strategie-ne-ego.webp" alt="LinkedIn není jen hra pro CEO. Obsah musí řídit strategie, ne ego" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--rozhovor">Rozhovor</span>
+                <time class="mcard__date" datetime="2026-02-11">11. 2. 2026</time>
+              </div>
+              <h3 class="mcard__title">LinkedIn není jen hra pro CEO. Obsah musí řídit strategie, ne ego</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="podcast" href="https://www.youtube.com/watch?v=gMfpOzU-oiQ" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/rozni-budoucnost-ecommerce.webp" alt="Michalis Katapodis o budoucnosti e-commerce" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--podcast">Podcast</span>
+                <time class="mcard__date" datetime="2025-10-13">13. 10. 2025</time>
+              </div>
+              <h3 class="mcard__title">Michalis Katapodis o budoucnosti e-commerce</h3>
+              <span class="mcard__medium">ROŽNI / Patrioti MSK</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/technologie-a-vyvoj/e-commerce-seo-v-ere-ai-jak-pripravit-e-shop-na-druhou-pulku-roku-2025/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/ecommerce-seo-v-ere-ai.webp" alt="E-commerce SEO v éře AI: Jak připravit e-shop na druhou půlku roku 2025" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2025-05-28">28. 5. 2025</time>
+              </div>
+              <h3 class="mcard__title">E-commerce SEO v éře AI: Jak připravit e-shop na druhou půlku roku 2025</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="rozhovor" href="https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-vita-nikolice/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/kam-kraci-vita-nikolice.webp" alt="Kam kráčí česká e-commerce podle Víta Nikoliče" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--rozhovor">Rozhovor</span>
+                <time class="mcard__date" datetime="2025-05-05">5. 5. 2025</time>
+              </div>
+              <h3 class="mcard__title">Kam kráčí česká e-commerce podle Víta Nikoliče</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="rozhovor" href="https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-petry-dolejsove/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/kam-kraci-petra-dolejsova.webp" alt="Kam kráčí česká e-commerce podle Petry Dolejšové" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--rozhovor">Rozhovor</span>
+                <time class="mcard__date" datetime="2025-03-11">11. 3. 2025</time>
+              </div>
+              <h3 class="mcard__title">Kam kráčí česká e-commerce podle Petry Dolejšové</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/zakulisi-3it/co-prinesl-3it-rok-2024/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/co-prinesl-3it-rok-2024.webp" alt="Co přinesl 3IT rok 2024" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2025-02-12">12. 2. 2025</time>
+              </div>
+              <h3 class="mcard__title">Co přinesl 3IT rok 2024</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="rozhovor" href="https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-honzy-kvasnicky/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/kam-kraci-honza-kvasnicka.webp" alt="Kam kráčí česká e-commerce podle Honzy Kvasničky" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--rozhovor">Rozhovor</span>
+                <time class="mcard__date" datetime="2024-11-12">12. 11. 2024</time>
+              </div>
+              <h3 class="mcard__title">Kam kráčí česká e-commerce podle Honzy Kvasničky</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/procesy-a-management/od-belbina-ke-gallupu-jak-jsme-objevili-superschopnosti-naseho-tymu/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/od-belbina-ke-gallupu.webp" alt="Od Belbina ke Gallupu: Jak jsme objevili superschopnosti našeho týmu" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2024-10-29">29. 10. 2024</time>
+              </div>
+              <h3 class="mcard__title">Od Belbina ke Gallupu: Jak jsme objevili superschopnosti našeho týmu</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="rozhovor" href="https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-jirky-kratochvila/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/kam-kraci-jirka-kratochvil.webp" alt="Kam kráčí česká e-commerce podle Jirky Kratochvíla" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--rozhovor">Rozhovor</span>
+                <time class="mcard__date" datetime="2024-09-30">30. 9. 2024</time>
+              </div>
+              <h3 class="mcard__title">Kam kráčí česká e-commerce podle Jirky Kratochvíla</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="rozhovor" href="https://www.3it.cz/vzdelavani/kam-kraci-ceska-e-commerce-podle-marka-krsky/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/kam-kraci-marek-krska.webp" alt="Kam kráčí česká e-commerce podle Marka Kršky" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--rozhovor">Rozhovor</span>
+                <time class="mcard__date" datetime="2024-07-12">12. 7. 2024</time>
+              </div>
+              <h3 class="mcard__title">Kam kráčí česká e-commerce podle Marka Kršky</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="podcast" href="https://www.forendors.cz/p/a960b23cdae3c1df095aa4400e54bf3b" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/onlajnov-17.webp" alt="Onlajnov: Michalis Katapodis a Lukáš Král" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--podcast">Podcast</span>
+                <time class="mcard__date" datetime="2024-04-19">19. 4. 2024</time>
+              </div>
+              <h3 class="mcard__title">Onlajnov: Michalis Katapodis a Lukáš Král</h3>
+              <span class="mcard__medium">Onlajnov / Forendors</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="prednaska" href="https://www.3it.cz/konference-a-eventy/fotoreport-z-konference-spolecne-tvorime-uspesne-e-shopy/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/cesta-k-vasemu-uspechu.webp" alt="Cesta k vašemu úspěchu" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--prednaska">Přednáška</span>
+                <time class="mcard__date" datetime="2024-02-26">26. 2. 2024</time>
+              </div>
+              <h3 class="mcard__title">Cesta k vašemu úspěchu</h3>
+              <span class="mcard__medium">Konference 3IT</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="video" href="https://www.youtube.com/watch?v=bC4y4Y8nCIo" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/firemni-kultura-rodina-tym.webp" alt="Firemní kultura: Jak jsme přešli z rodiny na tým" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--video">Video</span>
+                <time class="mcard__date" datetime="2024-01-01">2024</time>
+              </div>
+              <h3 class="mcard__title">Firemní kultura: Jak jsme přešli z rodiny na tým</h3>
+              <span class="mcard__medium">Barcamp Ostrava</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/konference-a-eventy/hrdinove-podnikani/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/hrdinove-podnikani.webp" alt="Hrdinové podnikání" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2022-10-20">20. 10. 2022</time>
+              </div>
+              <h3 class="mcard__title">Hrdinové podnikání</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/technologie-a-vyvoj/refaktor-jak-a-proc-s-nim-pracujeme/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/refaktor-jak-a-proc.webp" alt="Refaktor: jak a proč s ním pracujeme?" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2022-06-24">24. 6. 2022</time>
+              </div>
+              <h3 class="mcard__title">Refaktor: jak a proč s ním pracujeme?</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="rozhovor" href="https://digitaal.cz/o-firemni-kulture-v-it-firme-s-michalisem-katapodisem-z-3it/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/digitaal-firemni-kultura.webp" alt="O firemní kultuře v IT firmě s Michalisem Katapodisem z 3IT" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--rozhovor">Rozhovor</span>
+                <time class="mcard__date" datetime="2022-03-24">24. 3. 2022</time>
+              </div>
+              <h3 class="mcard__title">O firemní kultuře v IT firmě s Michalisem Katapodisem z 3IT</h3>
+              <span class="mcard__medium">DIGITAAL</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="podcast" href="https://podcasty.seznam.cz/podcast/nas-kmen/michalis-katapodis-3it-nastaveni-hr-procesy-ve-vyvojarske-firme-546818" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/nas-kmen-hr-procesy.svg" alt="Nastavení HR procesů ve vývojářské firmě" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--podcast">Podcast</span>
+                <time class="mcard__date" datetime="2022-03-21">21. 3. 2022</time>
+              </div>
+              <h3 class="mcard__title">Nastavení HR procesů ve vývojářské firmě</h3>
+              <span class="mcard__medium">Náš Kmen / Seznam Podcasty</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/technologie-a-vyvoj/propojeni-e-shopu-s-erp-systemy-solitea-money/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/erp-solitea-money.webp" alt="Propojení e-shopu s ERP systémy Solitea Money" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2021-09-30">30. 9. 2021</time>
+              </div>
+              <h3 class="mcard__title">Propojení e-shopu s ERP systémy Solitea Money</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/procesy-a-management/7-duvodu-proc-se-nejcasteji-zpozduji-e-commerce-projekty/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/sedm-duvodu-zpozdeni.webp" alt="7 důvodů, proč se nejčastěji zpožďují e-commerce projekty" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2020-09-24">24. 9. 2020</time>
+              </div>
+              <h3 class="mcard__title">7 důvodů, proč se nejčastěji zpožďují e-commerce projekty</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/procesy-a-management/sdileni-zkusenosti-a-opatreni-nasich-klientu-covid-19/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/sdileni-zkusenosti-covid.webp" alt="Sdílení zkušeností a opatření našich klientů během COVID-19" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2020-03-31">31. 3. 2020</time>
+              </div>
+              <h3 class="mcard__title">Sdílení zkušeností a opatření našich klientů během COVID-19</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="video" href="https://www.youtube.com/watch?v=jhHcdum9ZXU" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/z-nuly-do-minusu.webp" alt="Z nuly do mínusu a pak strmě nahoru?" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--video">Video</span>
+                <time class="mcard__date" datetime="2020-01-01">2020</time>
+              </div>
+              <h3 class="mcard__title">Z nuly do mínusu a pak strmě nahoru?</h3>
+              <span class="mcard__medium">YouTube</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/procesy-a-management/nasli-jsme-svaty-gral-pro-nase-vyvojare-i-klienty/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/svaty-gral-vyvojari-klienti.webp" alt="Našli jsme svatý grál pro naše vývojáře i klienty" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2019-12-09">9. 12. 2019</time>
+              </div>
+              <h3 class="mcard__title">Našli jsme svatý grál pro naše vývojáře i klienty</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="clanek" href="https://www.3it.cz/procesy-a-management/automatizovane-sklady-v-dnesni-ecommerce/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/automatizovane-sklady.webp" alt="Automatizované sklady v dnešní e-commerce" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--clanek">Článek</span>
+                <time class="mcard__date" datetime="2019-07-02">2. 7. 2019</time>
+              </div>
+              <h3 class="mcard__title">Automatizované sklady v dnešní e-commerce</h3>
+              <span class="mcard__medium">3IT.cz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="prednaska" href="https://imsraz.cz/pozor-zmena-57-sraz-bude-s-michalisem-katapodisem/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/vyber-dodavatele-eshopu.svg" alt="Jak si najít správného parťáka a nespálit se při výběru dodavatele e-shopu" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--prednaska">Přednáška</span>
+                <time class="mcard__date" datetime="2018-05-30">30. 5. 2018</time>
+              </div>
+              <h3 class="mcard__title">Jak si najít správného parťáka a nespálit se při výběru dodavatele e-shopu</h3>
+              <span class="mcard__medium">57. IM Sraz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="prezentace" href="https://www.slideshare.net/slideshow/budoucnost-eshop-v-r-michalis-katapodis/70135280" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/budoucnost-eshopu-v-cr.svg" alt="Budoucnost e-shopů v ČR" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--prezentace">Prezentace</span>
+                <time class="mcard__date" datetime="2016-12-02">2. 12. 2016</time>
+              </div>
+              <h3 class="mcard__title">Budoucnost e-shopů v ČR</h3>
+              <span class="mcard__medium">WordPress konference Opava / SlideShare</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="prednaska" href="https://imsraz.cz/44-imsraz-a-michalis-katapodis-na-co-si-davat-pozor-pri-tvorbe-e-shopu/" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/na-co-pozor-pri-tvorbe-eshopu.svg" alt="Na co si dávat pozor při tvorbě e-shopu" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--prednaska">Přednáška</span>
+                <time class="mcard__date" datetime="2016-06-28">28. 6. 2016</time>
+              </div>
+              <h3 class="mcard__title">Na co si dávat pozor při tvorbě e-shopu</h3>
+              <span class="mcard__medium">44. IM Sraz</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="video" href="https://rostecky.cz/jak-vytvorit-e-shop-t28553" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/jak-vytvorit-eshop-s-malym-rozpoctem.webp" alt="Jak vytvořit e-shop s malým rozpočtem?" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--video">Video</span>
+                <time class="mcard__date" datetime="2015-01-01">2015</time>
+              </div>
+              <h3 class="mcard__title">Jak vytvořit e-shop s malým rozpočtem?</h3>
+              <span class="mcard__medium">MladýPodnikatel.cz / Rostecký</span>
+            </div>
+          </a>
+          <a class="mcard" data-type="rozhovor" href="https://rostecky.cz/michalis-katapodis-nikdy-nedovolte-abyste-byli-z-velke-casti-zavisli-na-jednom-klientovi-t11459" target="_blank" rel="noopener noreferrer">
+            <div class="mcard__media">
+              <img src="/images/media/nezaviset-na-jednom-klientovi.webp" alt="Nikdy nedovolte, abyste byli z velké části závislí na jednom klientovi" width="800" height="450" loading="lazy" decoding="async" />
+            </div>
+            <div class="mcard__body">
+              <div class="mcard__meta">
+                <span class="mcard__type mcard__type--rozhovor">Rozhovor</span>
+                <time class="mcard__date" datetime="2014-01-01">2014</time>
+              </div>
+              <h3 class="mcard__title">Nikdy nedovolte, abyste byli z velké části závislí na jednom klientovi</h3>
+              <span class="mcard__medium">MladýPodnikatel.cz / Rostecký</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -1207,7 +1800,45 @@
         </div>
 
         <!-- Fotogalerie z hor a cest -->
-        <div class="photogrid" id="photogrid"></div>
+        <div class="photogrid" id="photogrid">
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 1">
+            <img src="/images/gallery/hory-01-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 1" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 2">
+            <img src="/images/gallery/hory-02-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 2" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 3">
+            <img src="/images/gallery/hory-03-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 3" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 4">
+            <img src="/images/gallery/hory-04-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 4" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 5">
+            <img src="/images/gallery/hory-05-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 5" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 6">
+            <img src="/images/gallery/hory-06-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 6" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 7">
+            <img src="/images/gallery/hory-07-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 7" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 8">
+            <img src="/images/gallery/hory-08-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 8" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 9">
+            <img src="/images/gallery/hory-09-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 9" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 10">
+            <img src="/images/gallery/hory-10-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 10" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 11">
+            <img src="/images/gallery/hory-11-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 11" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item photogrid__item--more" aria-label="Zobrazit celou galerii">
+            <img src="/images/gallery/hory-12-t.webp" alt="Michalis Katapodis - cestování a hory, fotka 12" loading="lazy" decoding="async" />
+            <span class="photogrid__more-label">+47</span>
+          </button>
+        </div>
 
         <!-- Auta -->
         <div class="feature feature--cars">
@@ -1229,7 +1860,45 @@
         </div>
 
         <!-- Galerie aut -->
-        <div class="photogrid photogrid--auta" id="photogrid-auta"></div>
+        <div class="photogrid photogrid--auta" id="photogrid-auta">
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 1">
+            <img src="/images/gallery-auta/auto-001-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 1" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 2">
+            <img src="/images/gallery-auta/auto-002-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 2" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 3">
+            <img src="/images/gallery-auta/auto-003-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 3" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 4">
+            <img src="/images/gallery-auta/auto-004-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 4" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 5">
+            <img src="/images/gallery-auta/auto-005-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 5" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 6">
+            <img src="/images/gallery-auta/auto-006-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 6" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 7">
+            <img src="/images/gallery-auta/auto-007-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 7" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 8">
+            <img src="/images/gallery-auta/auto-008-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 8" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 9">
+            <img src="/images/gallery-auta/auto-009-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 9" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 10">
+            <img src="/images/gallery-auta/auto-010-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 10" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item" aria-label="Zvětšit fotku 11">
+            <img src="/images/gallery-auta/auto-011-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 11" loading="lazy" decoding="async" />
+          </button>
+          <button type="button" class="photogrid__item photogrid__item--more" aria-label="Zobrazit celou galerii">
+            <img src="/images/gallery-auta/auto-012-t.webp" alt="Michalis Katapodis - auta a Porsche, fotka 12" loading="lazy" decoding="async" />
+            <span class="photogrid__more-label">+131</span>
+          </button>
+        </div>
 
         <!-- Míra Hejda -->
         <div class="story">
@@ -1247,6 +1916,44 @@
                 <span class="video__btn">▶</span>
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ČASTÉ OTÁZKY ============ -->
+    <!-- Obsah musí odpovídat FAQPage v JSON-LD na konci dokumentu. -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Časté otázky</span>
+          <h2>Na co se mě lidé ptají</h2>
+        </div>
+
+        <div class="faq__list">
+          <div class="faq__item">
+            <h3 class="faq__q">S čím Michalis Katapodis pomáhá?</h3>
+            <p class="faq__a">Michalis Katapodis pomáhá středním a velkým firmám s B2C a B2B e-shopy na míru, expanzí do zahraničí a nasazením AI v e-commerce. Vede softwarovou firmu 3IT.</p>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q">Co je 3IT?</h3>
+            <p class="faq__a">3IT je softwarová firma, kterou Michalis Katapodis spoluvlastní a vede. Staví e-commerce řešení pro firmy, které přerostly standardní platformy - B2C a B2B e-shopy na míru, expanzi do zahraničí a integrace s ERP.</p>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q">Kolik zkušeností má Michalis Katapodis v e-commerce?</h3>
+            <p class="faq__a">Michalis Katapodis se e-commerce věnuje více než 19 let. Vystudoval informační technologie na VŠB - Technická univerzita Ostrava.</p>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q">Kde Michalis Katapodis působí?</h3>
+            <p class="faq__a">Michalis Katapodis působí v Ostravě v České republice, kde sídlí i firma 3IT.</p>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q">Jak si domluvit konzultaci s Michalisem Katapodisem?</h3>
+            <p class="faq__a">Nezávaznou třicetiminutovou konzultaci zdarma si lze rezervovat na <a href="https://cal.com/katapodis/30min" target="_blank" rel="noopener">cal.com/katapodis/30min</a>. Probrat se dá stav e-shopu, plánovaná expanze i příprava na AI v e-commerce.</p>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q">Jak kontaktovat Michalise Katapodise?</h3>
+            <p class="faq__a">Napsat lze na e-mail michalis.katapodis@3it.cz nebo přes LinkedIn (linkedin.com/in/katapodis).</p>
           </div>
         </div>
       </div>
@@ -1297,9 +2004,9 @@
   <!-- Zpět nahoru — jen telefony (CSS) -->
   <button type="button" class="to-top" id="toTop" aria-label="Zpět nahoru">&uarr;</button>
 
-  <script src="media-data.js?v=20260929b"></script>
-  <script src="gallery-data.js?v=20260929b"></script>
-  <script src="gallery-auta-data.js?v=20260929b"></script>
-  <script src="main.js?v=20260929b"></script>
+  <script src="media-data.js?v=20260929c"></script>
+  <script src="gallery-data.js?v=20260929c"></script>
+  <script src="gallery-auta-data.js?v=20260929c"></script>
+  <script src="main.js?v=20260929c"></script>
 </body>
 </html>
