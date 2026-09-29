@@ -1,5 +1,45 @@
 window.MEDIA_ITEMS = [
  {
+  "type": "prednaska",
+  "title": "Bude vás AI doporučovat? Jak připravit e-shop na novou éru vyhledávání",
+  "publishedAt": "2026-09-10",
+  "dateLabel": "10. 9. 2026",
+  "datePrecision": "day",
+  "medium": "Webinář Advisio",
+  "url": "https://www.advisio.cz/skoleni/bude-vas-ai-doporucovat-jak-pripravit-e-shop-na-novou-eru-vyhledavani/",
+  "image": "/images/media/bude-vas-ai-doporucovat.webp"
+ },
+ {
+  "type": "clanek",
+  "title": "Agentické nakupování půl roku poté: ChatGPT ukončil svůj checkout. Objednávky z AI se přesto zdvojnásobily",
+  "publishedAt": "2026-09-08",
+  "dateLabel": "8. 9. 2026",
+  "datePrecision": "day",
+  "medium": "3IT.cz",
+  "url": "https://www.3it.cz/technologie-a-vyvoj/agenticke-nakupovani-pul-roku-pote-chatgpt-ukoncil-svuj-checkout-objednavky-z-ai-se-presto-zdvojnasobily/",
+  "image": "/images/media/agenticke-nakupovani-pul-roku.webp"
+ },
+ {
+  "type": "clanek",
+  "title": "ChatGPT Ads pro e-shopy: jak technicky připravit e-shop na reklamu v ChatGPT",
+  "publishedAt": "2026-09-01",
+  "dateLabel": "1. 9. 2026",
+  "datePrecision": "day",
+  "medium": "3IT.cz",
+  "url": "https://www.3it.cz/technologie-a-vyvoj/chatgpt-ads-pro-e-shopy-jak-technicky-pripravit-e-shop-na-reklamu-v-chatgpt/",
+  "image": "/images/media/chatgpt-ads-pro-eshopy.webp"
+ },
+ {
+  "type": "clanek",
+  "title": "E-shop po sezóně: co opravit dřív, než přijde další nákupní špička",
+  "publishedAt": "2026-08-03",
+  "dateLabel": "3. 8. 2026",
+  "datePrecision": "day",
+  "medium": "3IT.cz",
+  "url": "https://www.3it.cz/vzdelavani/e-shop-po-sezone-co-opravit-driv-nez-prijde-dalsi-nakupni-spicka/",
+  "image": "/images/media/e-shop-po-sezone.webp"
+ },
+ {
   "type": "rozhovor",
   "title": "Jak se v IT nezbláznit z „mokré houbičky“? Proč v 3IT sázíme na Gallup",
   "publishedAt": "2026-06-18",

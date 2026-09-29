@@ -32,6 +32,9 @@ Toto je osobní web Michalise Katapodise (https://katapodis.cz). Následující 
 
 ### Články
 
+- [Agentické nakupování půl roku poté: ChatGPT ukončil svůj checkout. Objednávky z AI se přesto zdvojnásobily](https://www.3it.cz/technologie-a-vyvoj/agenticke-nakupovani-pul-roku-pote-chatgpt-ukoncil-svuj-checkout-objednavky-z-ai-se-presto-zdvojnasobily/) - 3IT.cz, 8. 9. 2026
+- [ChatGPT Ads pro e-shopy: jak technicky připravit e-shop na reklamu v ChatGPT](https://www.3it.cz/technologie-a-vyvoj/chatgpt-ads-pro-e-shopy-jak-technicky-pripravit-e-shop-na-reklamu-v-chatgpt/) - 3IT.cz, 1. 9. 2026
+- [E-shop po sezóně: co opravit dřív, než přijde další nákupní špička](https://www.3it.cz/vzdelavani/e-shop-po-sezone-co-opravit-driv-nez-prijde-dalsi-nakupni-spicka/) - 3IT.cz, 3. 8. 2026
 - [Je váš e-shop připraven na AI nákupy? Role UCP a ACP v nové architektuře e-commerce](https://www.3it.cz/technologie-a-vyvoj/je-vas-e-shop-pripraven-na-ai-nakupy-role-ucp-a-acp-v-nove-architekture-e-commerce/) - 3IT.cz, 26. 2. 2026
 - [E-commerce SEO v éře AI: Jak připravit e-shop na druhou půlku roku 2025](https://www.3it.cz/technologie-a-vyvoj/e-commerce-seo-v-ere-ai-jak-pripravit-e-shop-na-druhou-pulku-roku-2025/) - 3IT.cz, 28. 5. 2025
 - [Co přinesl 3IT rok 2024](https://www.3it.cz/zakulisi-3it/co-prinesl-3it-rok-2024/) - 3IT.cz, 12. 2. 2025
@@ -72,6 +75,7 @@ Toto je osobní web Michalise Katapodise (https://katapodis.cz). Následující 
 
 ### Přednášky
 
+- [Bude vás AI doporučovat? Jak připravit e-shop na novou éru vyhledávání](https://www.advisio.cz/skoleni/bude-vas-ai-doporucovat-jak-pripravit-e-shop-na-novou-eru-vyhledavani/) - Webinář Advisio, 10. 9. 2026
 - [Motivace v podnikání po čtyřicítce. Jiná hra, jiná pravidla, stejný drive](https://www.barcampostrava.cz/) - Barcamp Ostrava, 16. 5. 2026
 - [Cesta k vašemu úspěchu](https://www.3it.cz/konference-a-eventy/fotoreport-z-konference-spolecne-tvorime-uspesne-e-shopy/) - Konference 3IT, 26. 2. 2024
 - [Jak si najít správného parťáka a nespálit se při výběru dodavatele e-shopu](https://imsraz.cz/pozor-zmena-57-sraz-bude-s-michalisem-katapodisem/) - 57. IM Sraz, 30. 5. 2018
