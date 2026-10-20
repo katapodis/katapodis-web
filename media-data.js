@@ -10,7 +10,7 @@ window.MEDIA_ITEMS = [
   "image": "/images/media/jak-dostat-eshop-do-doporuceni-chatgpt.webp"
  },
  {
-  "type": "prednaska",
+  "type": "podcast",
   "title": "Bude vás AI doporučovat? Jak připravit e-shop na novou éru vyhledávání",
   "publishedAt": "2026-09-10",
   "dateLabel": "10. 9. 2026",
