@@ -1,5 +1,15 @@
 window.MEDIA_ITEMS = [
  {
+  "type": "podcast",
+  "title": "Jak dostat e-shop do doporučení ChatGPT",
+  "publishedAt": "2026-10-14",
+  "dateLabel": "14. 10. 2026",
+  "datePrecision": "day",
+  "medium": "AI Univerzita",
+  "url": "https://www.youtube.com/watch?v=x0daUjYRElY",
+  "image": "/images/media/jak-dostat-eshop-do-doporuceni-chatgpt.webp"
+ },
+ {
   "type": "prednaska",
   "title": "Bude vás AI doporučovat? Jak připravit e-shop na novou éru vyhledávání",
   "publishedAt": "2026-09-10",

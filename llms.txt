@@ -63,6 +63,7 @@ Toto je osobní web Michalise Katapodise (https://katapodis.cz). Následující 
 
 ### Podcasty
 
+- [Jak dostat e-shop do doporučení ChatGPT](https://www.youtube.com/watch?v=x0daUjYRElY) - AI Univerzita, 14. 10. 2026
 - [Jak se připravit na e-commerce svět řízený AI?](https://socials.cz/blog/106---jak-se-pripravit-na-e-commerce-svet-rizeny-ai-michalis-katapodis-z-3it-cz) - Socials Podcast, 14. 5. 2026
 - [Jak Gallup pomohl v 3IT zlepšit komunikaci i výkon týmu](https://www.youtube.com/watch?v=IakS9cTrftk) - Sejdeme se na FRESHi, 11. 3. 2026
 - [Michalis Katapodis o budoucnosti e-commerce](https://www.youtube.com/watch?v=gMfpOzU-oiQ) - ROŽNI / Patrioti MSK, 13. 10. 2025
