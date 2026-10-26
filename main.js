@@ -296,6 +296,25 @@
       el.classList.add('rvl');
       io.observe(el);
     });
+
+    // Čísla v .proof naběhnou od nuly (HTML nese finální hodnotu → crawlery i bez JS ji vidí)
+    var nums = document.querySelectorAll('.stat__num');
+    var countIo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        countIo.unobserve(en.target);
+        var el = en.target, m = el.textContent.match(/^(\d+)(.*)$/);
+        if (!m || +m[1] < 5) return; // „1 ze 3“ apod. necháme být
+        var to = +m[1], rest = m[2], t0 = null, DUR = 1400;
+        (function tick(t) {
+          if (t0 === null) t0 = t;
+          var p = Math.min((t - t0) / DUR, 1);
+          el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))) + rest;
+          if (p < 1) requestAnimationFrame(tick);
+        })(performance.now());
+      });
+    }, { threshold: 0.6 });
+    nums.forEach(function (el) { countIo.observe(el); });
   })();
 
   /* ---------- Mobil: tlačítko „zpět nahoru" ---------- */
