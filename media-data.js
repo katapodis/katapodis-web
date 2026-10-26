@@ -225,7 +225,7 @@ window.MEDIA_ITEMS = [
   "publishedAt": "2024-04-19",
   "dateLabel": "19. 4. 2024",
   "datePrecision": "day",
-  "medium": "Onlajnov / Forendors",
+  "medium": "Pohoda & výkon (Mira Vlach)",
   "url": "https://www.forendors.cz/p/a960b23cdae3c1df095aa4400e54bf3b",
   "image": "/images/media/onlajnov-17.webp"
  },
