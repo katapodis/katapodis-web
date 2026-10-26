@@ -336,7 +336,7 @@ a:hover { color: var(--accent); }
 .story { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; margin-top: 16px; }
 .story__text h3 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); text-transform: uppercase; margin: 0 0 22px; }
 .story__text p { margin: 0 0 18px; }
-.story__note { font-size: .82rem; line-height: 1.6; color: var(--ink-3); margin: 6px 0 0 !important; }
+.story__note { font-size: .82rem; line-height: 1.6; color: var(--ink-3); margin: 14px 0 0 !important; }
 
 /* Video */
 .video { position: relative; overflow: hidden; aspect-ratio: 16 / 9; background: var(--dark) center/cover no-repeat; }
@@ -559,7 +559,8 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
   .media-more { display: block; width: 100%; margin-top: 26px; }
 
   /* Mrtvé video (Míra Hejda) — na telefonu skrýt slepou uličku */
-  .story__video { display: none; }
+  .story__video .video { display: none; }   /* mrtvé video skryté, poznámka pod ním zůstává */
+  .story__video .story__note { margin-top: 0 !important; }
 
   /* Číslované bloky Co řeším — číslo jako overline nad nadpisem */
   .sol { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
@@ -586,7 +587,7 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
   .hobbies .feature { gap: 30px; margin-bottom: 44px; }
   .feature--travel { margin-bottom: 40px; }
   .photogrid { margin: 26px 0 44px; }
-  .story { margin-top: 8px; }
+  .story { margin-top: 8px; row-gap: 8px; }
 
   /* Kontakt / CTA — tlačítka přes celou šířku pro palec */
   .cta h2 { font-size: clamp(2rem, 8.5vw, 2.6rem); }
