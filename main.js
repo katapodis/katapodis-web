@@ -89,7 +89,7 @@
     /* ---------- Filtr „Zobrazit" podle typu ---------- */
     var filterBar = document.getElementById('media-filter');
     if (filterBar) {
-      var ORDER = ['clanek', 'rozhovor', 'podcast', 'video', 'prednaska', 'prezentace', 'prace'];
+      var ORDER = ['clanek', 'rozhovor', 'podcast', 'video', 'prednaska', 'prezentace']; // 'prace' bez filtru
       var PLURAL = {
         clanek: 'Články', rozhovor: 'Rozhovory', podcast: 'Podcasty',
         video: 'Videa', prednaska: 'Přednášky', prezentace: 'Prezentace',

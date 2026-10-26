@@ -35,7 +35,8 @@ TYPE_PLURAL = {
     'video': 'Videa', 'prednaska': 'Přednášky', 'prezentace': 'Prezentace',
     'prace': 'Závěrečné práce',
 }
-TYPE_ORDER = ['clanek', 'rozhovor', 'podcast', 'video', 'prednaska', 'prezentace', 'prace']
+# 'prace' záměrně není ve filtru - štítek na kartě zůstává, ale vlastní tlačítko nemá
+TYPE_ORDER = ['clanek', 'rozhovor', 'podcast', 'video', 'prednaska', 'prezentace']
 
 # schema.org typ podle druhu výstupu
 SCHEMA_TYPE = {
