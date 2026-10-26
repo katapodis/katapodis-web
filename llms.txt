@@ -44,10 +44,12 @@ Toto je osobní web Michalise Katapodise (https://katapodis.cz). Následující 
 - [Hrdinové podnikání](https://www.3it.cz/konference-a-eventy/hrdinove-podnikani/) - 3IT.cz, 20. 10. 2022
 - [Refaktor: jak a proč s ním pracujeme?](https://www.3it.cz/technologie-a-vyvoj/refaktor-jak-a-proc-s-nim-pracujeme/) - 3IT.cz, 24. 6. 2022
 - [Propojení e-shopu s ERP systémy Solitea Money](https://www.3it.cz/technologie-a-vyvoj/propojeni-e-shopu-s-erp-systemy-solitea-money/) - 3IT.cz, 30. 9. 2021
+- [E-commerce nůžky se otevřely](https://rostecky.cz/e-commerce-nuzky-se-otevrely-t39700) - Rostecký.cz, 3. 12. 2020
 - [7 důvodů, proč se nejčastěji zpožďují e-commerce projekty](https://www.3it.cz/procesy-a-management/7-duvodu-proc-se-nejcasteji-zpozduji-e-commerce-projekty/) - 3IT.cz, 24. 9. 2020
 - [Sdílení zkušeností a opatření našich klientů během COVID-19](https://www.3it.cz/procesy-a-management/sdileni-zkusenosti-a-opatreni-nasich-klientu-covid-19/) - 3IT.cz, 31. 3. 2020
 - [Našli jsme svatý grál pro naše vývojáře i klienty](https://www.3it.cz/procesy-a-management/nasli-jsme-svaty-gral-pro-nase-vyvojare-i-klienty/) - 3IT.cz, 9. 12. 2019
 - [Automatizované sklady v dnešní e-commerce](https://www.3it.cz/procesy-a-management/automatizovane-sklady-v-dnesni-ecommerce/) - 3IT.cz, 2. 7. 2019
+- [Businessman a řemeslník: Dva přístupy v podnikání, kterými se (ne)musíte inspirovat](https://rostecky.cz/businessman-remeslnik-pristupy-podnikani-t31802) - Rostecký.cz, 15. 2. 2017
 
 ### Rozhovory
 
@@ -65,11 +67,13 @@ Toto je osobní web Michalise Katapodise (https://katapodis.cz). Následující 
 
 - [Jak dostat e-shop do doporučení ChatGPT](https://www.youtube.com/watch?v=x0daUjYRElY) - AI Univerzita, 14. 10. 2026
 - [Bude vás AI doporučovat? Jak připravit e-shop na novou éru vyhledávání](https://www.advisio.cz/skoleni/bude-vas-ai-doporucovat-jak-pripravit-e-shop-na-novou-eru-vyhledavani/) - Webinář Advisio, 10. 9. 2026
+- [Speciál: 5 expertů, jeden společný závěr o budoucnosti podnikání](https://podcasts.apple.com/cz/podcast/117-speci%C3%A1l-5-expert%C5%AF-jeden-spole%C4%8Dn%C3%BD-z%C3%A1v%C4%9Br-o-budoucnosti/id1710382207?i=1000783073079) - Socials Podcast #117, 13. 8. 2026
 - [Jak se připravit na e-commerce svět řízený AI?](https://socials.cz/blog/106---jak-se-pripravit-na-e-commerce-svet-rizeny-ai-michalis-katapodis-z-3it-cz) - Socials Podcast, 14. 5. 2026
 - [Jak Gallup pomohl v 3IT zlepšit komunikaci i výkon týmu](https://www.youtube.com/watch?v=IakS9cTrftk) - Sejdeme se na FRESHi, 11. 3. 2026
 - [Michalis Katapodis o budoucnosti e-commerce](https://www.youtube.com/watch?v=gMfpOzU-oiQ) - ROŽNI / Patrioti MSK, 13. 10. 2025
 - [Onlajnov: Michalis Katapodis a Lukáš Král](https://www.forendors.cz/p/a960b23cdae3c1df095aa4400e54bf3b) - Onlajnov / Forendors, 19. 4. 2024
 - [Nastavení HR procesů ve vývojářské firmě](https://podcasty.seznam.cz/podcast/nas-kmen/michalis-katapodis-3it-nastaveni-hr-procesy-ve-vyvojarske-firme-546818) - Náš Kmen / Seznam Podcasty, 21. 3. 2022
+- [IMcast #2: Skutečný marketing](https://www.youtube.com/watch?v=b3QoIfNfTSo) - IMcast / Internet Marketing Sraz, 4. 6. 2021
 
 ### Videa
 
@@ -79,7 +83,7 @@ Toto je osobní web Michalise Katapodise (https://katapodis.cz). Následující 
 
 ### Přednášky
 
-- [Často své silné stránky nevidíme, přijdou nám samozřejmé, ale nejsou](https://hrdinovepodnikani.cz/) - Konference Hrdinů podnikání, Minorit Opava, 22. 10. 2026
+- [Často své silné stránky nevidíme, přijdou nám samozřejmé, ale nejsou](https://hrdinovepodnikani.cz/) - Konference Hrdinů podnikání, Opava, 22. 10. 2026
 - [Motivace v podnikání po čtyřicítce. Jiná hra, jiná pravidla, stejný drive](https://www.youtube.com/watch?v=gEyevsTSdeg) - Barcamp Ostrava, 16. 5. 2026
 - [Cesta k vašemu úspěchu](https://www.3it.cz/konference-a-eventy/fotoreport-z-konference-spolecne-tvorime-uspesne-e-shopy/) - Konference 3IT, 26. 2. 2024
 - [Jak si najít správného parťáka a nespálit se při výběru dodavatele e-shopu](https://imsraz.cz/pozor-zmena-57-sraz-bude-s-michalisem-katapodisem/) - 57. IM Sraz, 30. 5. 2018
@@ -88,6 +92,12 @@ Toto je osobní web Michalise Katapodise (https://katapodis.cz). Následující 
 ### Prezentace
 
 - [Budoucnost e-shopů v ČR](https://www.slideshare.net/slideshow/budoucnost-eshop-v-r-michalis-katapodis/70135280) - WordPress konference Opava / SlideShare, 2. 12. 2016
+- [Na co si dát pozor při tvorbě eshopu](https://www.slideshare.net/katapodis/na-co-si-dat-pozor-pri-tvorbe-eshopu) - 44. IM Sraz / SlideShare, 28. 6. 2016
+
+### Závěrečné práce
+
+- [Personalizovatelný internetový portál](https://dspace.vsb.cz/handle/10084/78453) - Diplomová práce · VŠB-TUO, FEI, 2010
+- [Informační systém cestovní kanceláře Nikolas tours a.s.](https://dspace.vsb.cz/handle/10084/68303) - Bakalářská práce · VŠB-TUO, FEI, 2008
 
 ## Zájmy
 

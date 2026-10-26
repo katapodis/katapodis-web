@@ -50,6 +50,16 @@ window.MEDIA_ITEMS = [
   "image": "/images/media/chatgpt-ads-pro-eshopy.webp"
  },
  {
+  "type": "podcast",
+  "title": "Speciál: 5 expertů, jeden společný závěr o budoucnosti podnikání",
+  "publishedAt": "2026-08-13",
+  "dateLabel": "13. 8. 2026",
+  "datePrecision": "day",
+  "medium": "Socials Podcast #117",
+  "url": "https://podcasts.apple.com/cz/podcast/117-speci%C3%A1l-5-expert%C5%AF-jeden-spole%C4%8Dn%C3%BD-z%C3%A1v%C4%9Br-o-budoucnosti/id1710382207?i=1000783073079",
+  "image": "/images/media/socials-117-budoucnost-podnikani.svg"
+ },
+ {
   "type": "clanek",
   "title": "E-shop po sezóně: co opravit dřív, než přijde další nákupní špička",
   "publishedAt": "2026-08-03",
@@ -290,6 +300,26 @@ window.MEDIA_ITEMS = [
   "image": "/images/media/erp-solitea-money.webp"
  },
  {
+  "type": "podcast",
+  "title": "IMcast #2: Skutečný marketing",
+  "publishedAt": "2021-06-04",
+  "dateLabel": "4. 6. 2021",
+  "datePrecision": "day",
+  "medium": "IMcast / Internet Marketing Sraz",
+  "url": "https://www.youtube.com/watch?v=b3QoIfNfTSo",
+  "image": "/images/media/imcast-2-skutecny-marketing.webp"
+ },
+ {
+  "type": "clanek",
+  "title": "E-commerce nůžky se otevřely",
+  "publishedAt": "2020-12-03",
+  "dateLabel": "3. 12. 2020",
+  "datePrecision": "day",
+  "medium": "Rostecký.cz",
+  "url": "https://rostecky.cz/e-commerce-nuzky-se-otevrely-t39700",
+  "image": "/images/media/e-commerce-nuzky-se-otevrely.svg"
+ },
+ {
   "type": "clanek",
   "title": "7 důvodů, proč se nejčastěji zpožďují e-commerce projekty",
   "publishedAt": "2020-09-24",
@@ -350,6 +380,16 @@ window.MEDIA_ITEMS = [
   "image": "/images/media/vyber-dodavatele-eshopu.svg"
  },
  {
+  "type": "clanek",
+  "title": "Businessman a řemeslník: Dva přístupy v podnikání, kterými se (ne)musíte inspirovat",
+  "publishedAt": "2017-02-15",
+  "dateLabel": "15. 2. 2017",
+  "datePrecision": "day",
+  "medium": "Rostecký.cz",
+  "url": "https://rostecky.cz/businessman-remeslnik-pristupy-podnikani-t31802",
+  "image": "/images/media/businessman-a-remeslnik.webp"
+ },
+ {
   "type": "prezentace",
   "title": "Budoucnost e-shopů v ČR",
   "publishedAt": "2016-12-02",
@@ -370,6 +410,16 @@ window.MEDIA_ITEMS = [
   "image": "/images/media/na-co-pozor-pri-tvorbe-eshopu.svg"
  },
  {
+  "type": "prezentace",
+  "title": "Na co si dát pozor při tvorbě eshopu",
+  "publishedAt": "2016-06-28",
+  "dateLabel": "28. 6. 2016",
+  "datePrecision": "day",
+  "medium": "44. IM Sraz / SlideShare",
+  "url": "https://www.slideshare.net/katapodis/na-co-si-dat-pozor-pri-tvorbe-eshopu",
+  "image": "/images/media/na-co-si-dat-pozor-slides.svg"
+ },
+ {
   "type": "video",
   "title": "Jak vytvořit e-shop s malým rozpočtem?",
   "publishedAt": "2015-01-01",
@@ -388,5 +438,25 @@ window.MEDIA_ITEMS = [
   "medium": "MladýPodnikatel.cz / Rostecký",
   "url": "https://rostecky.cz/michalis-katapodis-nikdy-nedovolte-abyste-byli-z-velke-casti-zavisli-na-jednom-klientovi-t11459",
   "image": "/images/media/nezaviset-na-jednom-klientovi.webp"
+ },
+ {
+  "type": "prace",
+  "title": "Personalizovatelný internetový portál",
+  "publishedAt": "2010-01-01",
+  "dateLabel": "2010",
+  "datePrecision": "year",
+  "medium": "Diplomová práce · VŠB-TUO, FEI",
+  "url": "https://dspace.vsb.cz/handle/10084/78453",
+  "image": "/images/media/dp-personalizovatelny-internetovy-portal.svg"
+ },
+ {
+  "type": "prace",
+  "title": "Informační systém cestovní kanceláře Nikolas tours a.s.",
+  "publishedAt": "2008-01-01",
+  "dateLabel": "2008",
+  "datePrecision": "year",
+  "medium": "Bakalářská práce · VŠB-TUO, FEI",
+  "url": "https://dspace.vsb.cz/handle/10084/68303",
+  "image": "/images/media/bp-informacni-system-cestovni-kancelare.svg"
  }
 ];

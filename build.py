@@ -28,17 +28,20 @@ ROOT = pathlib.Path(__file__).parent
 TYPE_LABELS = {
     'clanek': 'Článek', 'rozhovor': 'Rozhovor', 'podcast': 'Podcast',
     'video': 'Video', 'prednaska': 'Přednáška', 'prezentace': 'Prezentace',
+    'prace': 'Závěrečná práce',
 }
 TYPE_PLURAL = {
     'clanek': 'Články', 'rozhovor': 'Rozhovory', 'podcast': 'Podcasty',
     'video': 'Videa', 'prednaska': 'Přednášky', 'prezentace': 'Prezentace',
+    'prace': 'Závěrečné práce',
 }
-TYPE_ORDER = ['clanek', 'rozhovor', 'podcast', 'video', 'prednaska', 'prezentace']
+TYPE_ORDER = ['clanek', 'rozhovor', 'podcast', 'video', 'prednaska', 'prezentace', 'prace']
 
 # schema.org typ podle druhu výstupu
 SCHEMA_TYPE = {
     'clanek': 'Article', 'rozhovor': 'Article', 'podcast': 'PodcastEpisode',
     'video': 'VideoObject', 'prednaska': 'CreativeWork', 'prezentace': 'CreativeWork',
+    'prace': 'Thesis',
 }
 
 PREVIEW_TILES = 12  # musí odpovídat PREVIEW v main.js

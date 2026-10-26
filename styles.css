@@ -229,6 +229,7 @@ a:hover { color: var(--accent); }
 .mcard__type--video      { background: #0f766e; }
 .mcard__type--prednaska  { background: #15803d; }
 .mcard__type--prezentace { background: #a16207; }
+.mcard__type--prace      { background: #475569; }
 
 /* ---------- Záliby ---------- */
 .hobbies { padding: 128px 0; background: var(--bg-alt); }

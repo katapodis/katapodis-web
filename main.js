@@ -37,7 +37,8 @@
   if (mediaGrid && window.MEDIA_ITEMS) {
     var TYPE_LABELS = {
       clanek: 'Článek', rozhovor: 'Rozhovor', podcast: 'Podcast',
-      video: 'Video', prednaska: 'Přednáška', prezentace: 'Prezentace'
+      video: 'Video', prednaska: 'Přednáška', prezentace: 'Prezentace',
+      prace: 'Závěrečná práce'
     };
     function esc(s) {
       return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -87,10 +88,11 @@
     /* ---------- Filtr „Zobrazit" podle typu ---------- */
     var filterBar = document.getElementById('media-filter');
     if (filterBar) {
-      var ORDER = ['clanek', 'rozhovor', 'podcast', 'video', 'prednaska', 'prezentace'];
+      var ORDER = ['clanek', 'rozhovor', 'podcast', 'video', 'prednaska', 'prezentace', 'prace'];
       var PLURAL = {
         clanek: 'Články', rozhovor: 'Rozhovory', podcast: 'Podcasty',
-        video: 'Videa', prednaska: 'Přednášky', prezentace: 'Prezentace'
+        video: 'Videa', prednaska: 'Přednášky', prezentace: 'Prezentace',
+        prace: 'Závěrečné práce'
       };
       var present = {};
       items.forEach(function (it) { present[it.type] = 1; });
