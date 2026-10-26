@@ -317,6 +317,32 @@
     nums.forEach(function (el) { countIo.observe(el); });
   })();
 
+  /* ---------- Mobil: plovoucí CTA „Nezávazná konzultace" ---------- */
+  // Ukáže se, až hero CTA odjede z obrazovky; schová se v kontaktní sekci (má vlastní CTA).
+  (function () {
+    if (!window.matchMedia('(max-width: 600px)').matches) return;
+    var cta = document.getElementById('stickyCta');
+    var hero = document.querySelector('.hero__actions');
+    var contact = document.getElementById('kontakt');
+    if (!cta || !hero || !contact || !('IntersectionObserver' in window)) return;
+    var heroIn = true, contactIn = false;
+    function update() {
+      var show = !heroIn && !contactIn;
+      cta.classList.toggle('is-visible', show);
+      cta.setAttribute('aria-hidden', show ? 'false' : 'true');
+      cta.tabIndex = show ? 0 : -1;
+    }
+    new IntersectionObserver(function (en) {
+      en.forEach(function (e) {
+        if (e.target === hero) heroIn = e.isIntersecting || e.boundingClientRect.top > 0;
+        else contactIn = e.isIntersecting;
+      });
+      update();
+    }).observe(hero);
+    var io2 = new IntersectionObserver(function (en) { en.forEach(function (e) { contactIn = e.isIntersecting; }); update(); });
+    io2.observe(contact);
+  })();
+
   /* ---------- Mobil: tlačítko „zpět nahoru" ---------- */
   (function () {
     if (!window.matchMedia('(max-width: 600px)').matches) return;

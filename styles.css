@@ -385,6 +385,15 @@ a:hover { color: var(--accent); }
 html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu při otevřeném menu */
 .travel-stats { display: none; }                            /* statistiky cest — jen telefony */
 .media-more { display: none; }                              /* „Zobrazit další" — jen telefony */
+.sticky-cta {                                              /* plovoucí CTA konzultace — jen telefony */
+  position: fixed; left: calc(16px + env(safe-area-inset-left)); right: calc(16px + 46px + 10px + env(safe-area-inset-right));
+  bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 39; height: 46px; display: none;
+  align-items: center; justify-content: center; background: var(--accent); color: #fff;
+  font-weight: 600; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap;
+  box-shadow: 0 10px 28px rgba(16,12,20,.22); opacity: 0; transform: translateY(10px); pointer-events: none;
+  transition: opacity .28s var(--ease), transform .28s var(--ease);
+}
+.sticky-cta:hover { text-decoration: none; }
 .to-top {                                                   /* zpět nahoru — jen telefony */
   position: fixed; right: calc(16px + env(safe-area-inset-right)); bottom: calc(18px + env(safe-area-inset-bottom));
   z-index: 40; width: 46px; height: 46px; display: none; align-items: center; justify-content: center;
@@ -581,6 +590,9 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
 
   /* Zpět nahoru */
   .to-top { display: flex; }
+  .sticky-cta { display: flex; }
+  .sticky-cta.is-visible { opacity: 1; transform: none; pointer-events: auto; }
+  html.no-scroll .sticky-cta { opacity: 0; pointer-events: none; }
   .to-top.is-visible { opacity: 1; transform: none; pointer-events: auto; }
 
   /* Záliby — sevřenější rozestupy */
