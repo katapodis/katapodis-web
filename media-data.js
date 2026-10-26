@@ -310,6 +310,16 @@ window.MEDIA_ITEMS = [
   "image": "/images/media/imcast-2-skutecny-marketing.webp"
  },
  {
+  "type": "podcast",
+  "title": "IMcast #1: ERP systémy",
+  "publishedAt": "2021-05-06",
+  "dateLabel": "6. 5. 2021",
+  "datePrecision": "day",
+  "medium": "IMcast / Internet Marketing Sraz",
+  "url": "https://www.youtube.com/watch?v=wTjuAcGb68w",
+  "image": "/images/media/imcast-1-erp-systemy.webp"
+ },
+ {
   "type": "clanek",
   "title": "E-commerce nůžky se otevřely",
   "publishedAt": "2020-12-03",
