@@ -146,8 +146,22 @@ a:hover { color: var(--accent); }
 .stat__label { margin: 14px 0 0; color: var(--ink-2); font-size: .92rem; line-height: 1.5; }
 .proof__media { margin-top: 72px; text-align: center; }
 .proof__label { font-size: .72rem; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 26px; }
-.proof__names { list-style: none; margin: 0 auto; padding: 0; max-width: 980px; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 34px; }
-.proof__names li { font-size: 1.02rem; font-weight: 700; letter-spacing: -.01em; color: var(--ink); opacity: .78; }
+/* Plynoucí pás log — sjednocená černá silueta, pauza po najetí myší */
+.logos { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); }
+.logos__track { display: flex; width: max-content; animation: logos 48s linear infinite; }
+.logos:hover .logos__track { animation-play-state: paused; }
+.logos__set { display: flex; align-items: center; gap: 72px; padding: 6px 72px 6px 0; margin: 0; list-style: none; }
+.logos__set li { flex: none; display: flex; align-items: center; height: 48px; }
+.logos__set img { height: var(--h); width: auto; filter: brightness(0); opacity: .5; transition: opacity .3s var(--ease); }
+.logos__set li:hover img, .logos__set li:hover .logo-word { opacity: .9; }
+.logo-word { font-size: 1.25rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: #000; opacity: .5; white-space: nowrap; transition: opacity .3s var(--ease); }
+@keyframes logos { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .logos { -webkit-mask-image: none; mask-image: none; }
+  .logos__track { animation: none; width: auto; justify-content: center; }
+  .logos__set { flex-wrap: wrap; justify-content: center; gap: 28px 48px; padding: 0; }
+  .logos__set[aria-hidden="true"] { display: none; }
+}
 .proof__more { display: inline-block; margin-top: 30px; font-size: .72rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
 
 /* ---------- Reference (tmavá sekce) ---------- */
@@ -466,8 +480,10 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
   .stat { padding: 4px 16px 6px; }
   .stat__label { font-size: .84rem; }
   .proof__media { margin-top: 48px; }
-  .proof__names { gap: 10px 22px; }
-  .proof__names li { font-size: .92rem; }
+  .logos { margin: 0 -20px; }
+  .logos__set { gap: 44px; padding-right: 44px; }
+  .logos__set img { height: calc(var(--h) * .8); }
+  .logo-word { font-size: 1rem; }
   .voices, .speaking { padding: 72px 0; }
   .voices__lead { margin-bottom: 48px; }
   .voice { padding: 30px 22px; }
