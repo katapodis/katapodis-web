@@ -30,6 +30,17 @@ Toto je osobní web Michalise Katapodise (https://katapodis.cz). Následující 
 - Facebook: https://www.facebook.com/katapodis
 - Firma 3IT: https://www.3it.cz/
 
+## Přednášky a press kit
+
+Michalis Katapodis přednáší na konferencích, barcampech a firemních akcích. Témata:
+
+- AI a e-commerce: jak dostat e-shop do doporučení ChatGPT, agentické nakupování, produktová data
+- Expanze a B2B e-commerce: růst za hranice Česka a digitalizace B2B prodeje
+- Firemní kultura a motivace: z rodiny na tým, Gallup CliftonStrengths v praxi, motivace v podnikání po čtyřicítce
+- Silné stránky: „Často své silné stránky nevidíme, přijdou nám samozřejmé, ale nejsou“
+
+Press kit (krátké a delší bio, 3 fotografie v tiskovém rozlišení): https://katapodis.cz/press/michalis-katapodis-press-kit.zip
+
 ## Média a tvorba
 
 ### Články

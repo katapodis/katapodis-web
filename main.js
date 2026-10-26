@@ -29,7 +29,8 @@
   /* ---------- E-mail (jednoduchá ochrana proti scraperům) ---------- */
   var mail = 'michalis.katapodis' + '@' + '3it.cz';
   document.querySelectorAll('[data-email]').forEach(function (el) {
-    el.setAttribute('href', 'mailto:' + mail);
+    var subject = el.getAttribute('data-email');
+    el.setAttribute('href', 'mailto:' + mail + (subject ? '?subject=' + encodeURIComponent(subject) : ''));
   });
 
   /* ---------- Média & Tvorba: grid karet (data z media-data.js) ---------- */
@@ -137,9 +138,7 @@
           if (over) capped++;
         });
         moreBtn.style.display = capped ? '' : 'none';
-        moreBtn.textContent = capped === 1 ? 'Zobrazit 1 další'
-          : capped < 5 ? 'Zobrazit další ' + capped
-          : 'Zobrazit dalších ' + capped;
+        moreBtn.textContent = 'Zobrazit všechny (' + visible + ')';
       }
       moreBtn.addEventListener('click', function () {
         expanded = true;
@@ -283,7 +282,8 @@
     document.documentElement.classList.add('reveal-ready');
     var SEL = '.section-head, .scard, .solve__photo, .solve__main, .sol, ' +
       '.about-me__photo, .about-me__body, .mcard, .media-more, .feature__text, ' +
-      '.travel-stats, .photogrid, .story__text, .faq__item, .cta__inner';
+      '.travel-stats, .photogrid, .story__text, .faq__item, .cta__inner, ' +
+      '.stat, .proof__media, .voices__lead, .voice, .talk, .presskit';
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting || en.boundingClientRect.top < 0) {

@@ -57,7 +57,7 @@ window.MEDIA_ITEMS = [
   "datePrecision": "day",
   "medium": "Socials Podcast #117",
   "url": "https://podcasts.apple.com/cz/podcast/117-speci%C3%A1l-5-expert%C5%AF-jeden-spole%C4%8Dn%C3%BD-z%C3%A1v%C4%9Br-o-budoucnosti/id1710382207?i=1000783073079",
-  "image": "/images/media/socials-117-budoucnost-podnikani.svg"
+  "image": "/images/media/socials-117-budoucnost-podnikani.webp"
  },
  {
   "type": "clanek",
@@ -97,7 +97,7 @@ window.MEDIA_ITEMS = [
   "datePrecision": "day",
   "medium": "Socials Podcast",
   "url": "https://socials.cz/blog/106---jak-se-pripravit-na-e-commerce-svet-rizeny-ai-michalis-katapodis-z-3it-cz",
-  "image": "/images/media/ecommerce-svet-rizeny-ai.svg"
+  "image": "/images/media/ecommerce-svet-rizeny-ai.webp"
  },
  {
   "type": "podcast",
@@ -287,7 +287,7 @@ window.MEDIA_ITEMS = [
   "datePrecision": "day",
   "medium": "Náš Kmen / Seznam Podcasty",
   "url": "https://podcasty.seznam.cz/podcast/nas-kmen/michalis-katapodis-3it-nastaveni-hr-procesy-ve-vyvojarske-firme-546818",
-  "image": "/images/media/nas-kmen-hr-procesy.svg"
+  "image": "/images/media/nas-kmen-hr-procesy.webp"
  },
  {
   "type": "clanek",
@@ -397,7 +397,7 @@ window.MEDIA_ITEMS = [
   "datePrecision": "day",
   "medium": "WordPress konference Opava / SlideShare",
   "url": "https://www.slideshare.net/slideshow/budoucnost-eshop-v-r-michalis-katapodis/70135280",
-  "image": "/images/media/budoucnost-eshopu-v-cr.svg"
+  "image": "/images/media/budoucnost-eshopu-v-cr.webp"
  },
  {
   "type": "prednaska",
@@ -407,7 +407,7 @@ window.MEDIA_ITEMS = [
   "datePrecision": "day",
   "medium": "44. IM Sraz",
   "url": "https://imsraz.cz/44-imsraz-a-michalis-katapodis-na-co-si-davat-pozor-pri-tvorbe-e-shopu/",
-  "image": "/images/media/na-co-pozor-pri-tvorbe-eshopu.svg"
+  "image": "/images/media/na-co-pozor-pri-tvorbe-eshopu.webp"
  },
  {
   "type": "prezentace",
@@ -417,7 +417,7 @@ window.MEDIA_ITEMS = [
   "datePrecision": "day",
   "medium": "44. IM Sraz / SlideShare",
   "url": "https://www.slideshare.net/katapodis/na-co-si-dat-pozor-pri-tvorbe-eshopu",
-  "image": "/images/media/na-co-si-dat-pozor-slides.svg"
+  "image": "/images/media/na-co-si-dat-pozor-slides.webp"
  },
  {
   "type": "video",
@@ -447,7 +447,7 @@ window.MEDIA_ITEMS = [
   "datePrecision": "year",
   "medium": "Diplomová práce · VŠB-TUO, FEI",
   "url": "https://dspace.vsb.cz/handle/10084/78453",
-  "image": "/images/media/dp-personalizovatelny-internetovy-portal.svg"
+  "image": "/images/media/dp-personalizovatelny-internetovy-portal.webp"
  },
  {
   "type": "prace",
