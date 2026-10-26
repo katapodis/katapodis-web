@@ -400,16 +400,6 @@ window.MEDIA_ITEMS = [
   "image": "/images/media/budoucnost-eshopu-v-cr.webp"
  },
  {
-  "type": "prednaska",
-  "title": "Na co si dávat pozor při tvorbě e-shopu",
-  "publishedAt": "2016-06-28",
-  "dateLabel": "28. 6. 2016",
-  "datePrecision": "day",
-  "medium": "44. IM Sraz",
-  "url": "https://imsraz.cz/44-imsraz-a-michalis-katapodis-na-co-si-davat-pozor-pri-tvorbe-e-shopu/",
-  "image": "/images/media/na-co-pozor-pri-tvorbe-eshopu.webp"
- },
- {
   "type": "prezentace",
   "title": "Na co si dát pozor při tvorbě eshopu",
   "publishedAt": "2016-06-28",
