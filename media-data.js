@@ -1,5 +1,15 @@
 window.MEDIA_ITEMS = [
  {
+  "type": "prednaska",
+  "title": "Často své silné stránky nevidíme, přijdou nám samozřejmé, ale nejsou",
+  "publishedAt": "2026-10-22",
+  "dateLabel": "22. 10. 2026",
+  "datePrecision": "day",
+  "medium": "Konference Hrdinů podnikání, Opava",
+  "url": "https://hrdinovepodnikani.cz/",
+  "image": "/images/media/konference-hrdinu-podnikani-2026.webp"
+ },
+ {
   "type": "podcast",
   "title": "Jak dostat e-shop do doporučení ChatGPT",
   "publishedAt": "2026-10-14",
