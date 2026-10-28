@@ -169,8 +169,11 @@ a:hover { color: var(--accent); }
 .voices .section-head h2 { color: #fff; }
 .voices__lead { margin: 0 auto 72px; max-width: 860px; text-align: center; }
 .voices__lead blockquote { margin: 0; font-size: clamp(1.6rem, 3.4vw, 2.5rem); font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }
-.voices figcaption { margin-top: 22px; font-size: .74rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #fff; }
+.voices figcaption { display: flex; align-items: center; gap: 16px; margin-top: 22px; font-size: .74rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #fff; }
 .voices figcaption span { display: block; margin-top: 6px; font-weight: 500; letter-spacing: .06em; text-transform: none; font-size: .86rem; color: #a9a6ae; }
+.voice__avatar { flex: 0 0 auto; width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 1px solid var(--dark-line); }
+.voices__lead figcaption { flex-direction: column; gap: 14px; }
+.voices__lead .voice__avatar { width: 72px; height: 72px; }
 .voices__grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--dark-line); border-left: 1px solid var(--dark-line); }
 .voice { margin: 0; padding: 40px 34px; border-right: 1px solid var(--dark-line); border-bottom: 1px solid var(--dark-line); display: flex; flex-direction: column; justify-content: space-between; }
 .voice blockquote { margin: 0; color: #d6d4da; font-size: 1rem; line-height: 1.7; }
