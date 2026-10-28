@@ -41,6 +41,44 @@ Michalise Katapodise lze pozvat na přednášku, do podcastu nebo požádat o od
 Kontakt: michalis.katapodis@3it.cz
 Press kit (krátké a delší bio, 11 fotografií v tiskovém rozlišení): https://katapodis.cz/press/michalis-katapodis-press-kit.zip
 
+## Časté otázky
+
+### Kdo je Michalis Katapodis?
+
+Michalis Katapodis je CEO a spolumajitel ostravské softwarové firmy 3IT a odborník na e-commerce s 19 lety praxe. S týmem 3IT staví B2B a B2C e-shopy na míru propojené s ERP, pomáhá firmám s expanzí do zahraničí a s přípravou e-shopů na nakupování přes AI. Vystudoval informační technologie na VŠB - Technické univerzitě Ostrava (Bc., Ing.), do 3IT nastoupil v roce 2010 a spolumajitelem je od roku 2011. Přednáší na konferencích a vystupuje v podcastech o AI v e-commerce, SEO a GEO.
+
+### Co je 3IT a pro koho staví e-shopy?
+
+3IT (3IT úspěšný eshop s.r.o.) je softwarová firma z Ostravy, která vyvíjí e-shopy na míru pro střední a velké firmy, jež přerostly krabicová řešení. Staví B2C i B2B e-shopy, řeší jejich propojení s ERP a sklady a expanzi do zahraničí. Zákazníci s e-shopy od 3IT expandovali do 13 zemí, průměrná délka spolupráce je 12 let a e-shopy zákazníků 3IT navštívil každý třetí Čech. Více na 3it.cz.
+
+### Kdy se vyplatí e-shop na míru místo krabicového řešení?
+
+E-shop na míru se vyplatí ve chvíli, kdy byznys roste rychleji než technologie. Typické signály jsou přibývající ruční procesy, složitá napojení, datové můstky a middleware, kompromisy kvůli limitům platformy a to, že každá další země, B2B požadavek nebo nový prodejní kanál je dražší a pomalejší. Pak se obvykle víc vyplatí jeden technologický základ postavený podle procesů firmy, než další obcházení omezení krabicové platformy.
+
+### Jak digitalizovat B2B prodej a propojit B2B e-shop s ERP?
+
+Základem je přenést do e-shopu to, co dnes obchodníci řeší v e-mailech a tabulkách: individuální ceny a cenotvorbu, schvalování objednávek, opakované objednávky a obsah zobrazovaný konkrétním zákazníkům. E-shop se pak propojí s ERP, sklady a dalšími podnikovými systémy, aby data o cenách, dostupnosti a objednávkách tekla automaticky. Tímto způsobem 3IT staví například B2B e-shop pro Paul-lange.cz se složitou cenotvorbou a individuálním zobrazováním obsahu.
+
+### Jak expandovat s e-shopem do zahraničí?
+
+Každá další země nemusí znamenat další samostatný e-shop, administraci a datový chaos. Michalis Katapodis a 3IT doporučují jeden technologický základ s centrální správou produktů, objednávek a obsahu a s dostatečnou flexibilitou pro pravidla jednotlivých trhů, tedy jazyky, měny, ceny, dopravu a platby. Zákazníci 3IT takto s e-shopy expandovali do 13 zemí.
+
+### Jak připravit e-shop na AI a dostat ho do doporučení ChatGPT?
+
+AI asistenti jako ChatGPT, Perplexity nebo Google AI Overviews se stávají novým místem, kde zákazníci produkty hledají a porovnávají. Optimalizace pro jejich odpovědi se označuje jako GEO (Generative Engine Optimization) a navazuje na klasické SEO. Aby AI e-shop doporučovala, potřebuje kvalitní a strukturovaná produktová data, otevřená rozhraní, srozumitelný obsah a spolehlivý technologický základ. Michalis Katapodis se tématu věnuje v podcastu Jak dostat e-shop do doporučení ChatGPT (https://www.youtube.com/watch?v=x0daUjYRElY) a v článcích o agentickém nakupování na 3IT.cz.
+
+### Jaké reference má 3IT?
+
+Zákazníci 3IT oceňují hlavně lidský přístup, rychlou komunikaci a to, že tým nad zadáním přemýšlí a navrhuje řešení podle skutečných potřeb. Mezi zákazníky patří například Colosus.cz, Dalap (Ventilatory.cz), Jezírka Banat, Provysavače.cz a Paul-lange.cz. Citace zákazníků jsou v sekci Reference, případové studie na 3it.cz/reference.
+
+### Lze Michalise Katapodise pozvat na přednášku, do podcastu nebo požádat o odborný komentář?
+
+Ano. Michalis Katapodis přednáší na konferencích a firemních akcích, hostuje v podcastech a poskytuje odborné komentáře médiím. Témata: AI v e-commerce, SEO a GEO, expanze e-shopů do zahraničí, B2B e-commerce a propojení s ERP, firemní kultura a silné stránky. Vystoupil například na Konferenci Hrdinů podnikání, v AI Univerzitě, Socials Podcastu, na webináři Advisio a v magazínu POSITIV. Press kit s bio a fotografiemi je ke stažení na katapodis.cz/press.
+
+### Jak kontaktovat Michalise Katapodise a domluvit si konzultaci?
+
+Nezávaznou třicetiminutovou konzultaci zdarma si lze rezervovat na cal.com/katapodis/30min. Probrat se dá stav e-shopu, plánovaná expanze, B2B prodej i příprava na AI. Napsat lze také na e-mail michalis.katapodis@3it.cz nebo přes LinkedIn (https://www.linkedin.com/in/katapodis).
+
 ## Média a tvorba
 
 ### Články

@@ -364,12 +364,23 @@ a:hover { color: var(--accent); }
   max-width: 880px; margin: 0 auto;
   border-top: 1px solid var(--line);
 }
-.faq__item { border-bottom: 1px solid var(--line); padding: 30px 0; }
+.faq__item { border-bottom: 1px solid var(--line); }
 .faq__q {
-  font-size: 1.12rem; line-height: 1.35; font-weight: 600;
-  letter-spacing: -.01em; margin: 0 0 12px;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 26px 0; cursor: pointer; list-style: none;
 }
-.faq__a { color: var(--ink-2); margin: 0; font-size: 1rem; line-height: 1.65; }
+.faq__q::-webkit-details-marker { display: none; }
+.faq__q h3 { font-size: 1.12rem; line-height: 1.35; font-weight: 600; letter-spacing: -.01em; margin: 0; transition: color .18s var(--ease); }
+.faq__q:hover h3 { color: var(--accent); }
+.faq__q::after {                                   /* plus → křížek */
+  content: ""; flex: 0 0 14px; height: 14px;
+  background: linear-gradient(currentColor, currentColor) center / 14px 1.5px no-repeat,
+              linear-gradient(currentColor, currentColor) center / 1.5px 14px no-repeat;
+  transition: transform .25s var(--ease);
+}
+.faq__item[open] > .faq__q::after { transform: rotate(45deg); }
+.faq__q:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.faq__a { color: var(--ink-2); margin: 0; padding: 0 38px 28px 0; font-size: 1rem; line-height: 1.65; }
 .faq__a a { color: var(--accent); font-weight: 600; }
 .faq__a a:hover { text-decoration: underline; }
 
@@ -523,8 +534,9 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
 
   /* Sevřenější svislý rytmus sekcí */
   .about, .media, .hobbies, .about-me, .faq { padding: 60px 0; }
-  .faq__item { padding: 24px 0; }
-  .faq__q { font-size: 1.04rem; }
+  .faq__q { padding: 22px 0; }
+  .faq__q h3 { font-size: 1.04rem; }
+  .faq__a { padding-right: 0; }
   .cta { padding: 72px 0; }
   .section-head { margin-bottom: 32px; }
   .section-sub { font-size: .98rem; }
