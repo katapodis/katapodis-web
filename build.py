@@ -182,7 +182,7 @@ def item_list(items):
             extra = (f'\n            "thumbnailUrl": "https://i.ytimg.com/vi/{vid}/maxresdefault.jpg",'
                      f'\n            "uploadDate": "{date}",'
                      f'\n            "embedUrl": "https://www.youtube.com/embed/{vid}",'
-                     f'\n            "description": {j(it["title"] + " - " + it["medium"])},')
+                     f'\n            "description": {j(it["title"] + " – " + it["medium"])},')
         blocks.append(f'''        {{
           "@type": "ListItem",
           "position": {i},
@@ -224,9 +224,9 @@ def main():
     html = replace_inner(html, r'<div class="media-filter" id="media-filter"[^>]*>',
                          media_filter(items), ' ' * 8)
     html = replace_inner(html, r'<div class="photogrid" id="photogrid">',
-                         gallery_tiles(hory, 'Michalis Katapodis - cestování a hory, fotka'), ' ' * 8)
+                         gallery_tiles(hory, 'Michalis Katapodis – cestování a hory, fotka'), ' ' * 8)
     html = replace_inner(html, r'<div class="photogrid photogrid--auta" id="photogrid-auta">',
-                         gallery_tiles(auta, 'Michalis Katapodis - auta a Porsche, fotka'), ' ' * 8)
+                         gallery_tiles(auta, 'Michalis Katapodis – auta a Porsche, fotka'), ' ' * 8)
 
     # JSON-LD ItemList
     marker = '      "itemListElement": [\n'

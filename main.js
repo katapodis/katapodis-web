@@ -227,7 +227,7 @@
         btn.setAttribute('aria-label', isMore ? 'Zobrazit celou galerii' : 'Zvětšit fotku ' + (idx + 1));
         var img = new Image();
         img.src = arr[idx].t;
-        img.alt = 'Michalis Katapodis - fotka ' + (idx + 1);
+        img.alt = 'Michalis Katapodis – fotka ' + (idx + 1);
         img.loading = 'lazy';
         img.decoding = 'async';
         btn.appendChild(img);
