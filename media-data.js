@@ -20,6 +20,16 @@ window.MEDIA_ITEMS = [
   "image": "/images/media/jak-dostat-eshop-do-doporuceni-chatgpt.webp"
  },
  {
+  "type": "rozhovor",
+  "title": "Jaké dovednosti si musíme osvojit, abychom uspěli na novém trhu práce vlivem AI?",
+  "publishedAt": "2026-09-20",
+  "dateLabel": "20. 9. 2026",
+  "datePrecision": "day",
+  "medium": "Magazín POSITIV 3/2026, str. 69",
+  "url": "https://magazin.positiv.cz/positiv-3-2026/jake-dovednosti-si-musime-osvojit-abychom-uspeli-na-novem-trhu-prace-vlivem-ai",
+  "image": "/images/media/positiv-3-2026-dovednosti-ai.webp"
+ },
+ {
   "type": "podcast",
   "title": "Bude vás AI doporučovat? Jak připravit e-shop na novou éru vyhledávání",
   "publishedAt": "2026-09-10",
