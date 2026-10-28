@@ -295,22 +295,6 @@ a:hover { color: var(--accent); }
 .mcard__type--prezentace { background: #a16207; }
 .mcard__type--prace      { background: #475569; }
 
-/* Zvýrazněná citace z tisku (POSITIV 3/2026) */
-.press-quote { display: grid; grid-template-columns: 200px 1fr; gap: 48px; align-items: center; max-width: 1080px; margin: 0 auto 72px; padding: 40px; background: var(--bg-alt); border: 1px solid var(--line); }
-.press-quote__page { display: block; box-shadow: 0 18px 38px -20px rgba(20,15,20,.45); transition: transform .3s var(--ease); }
-.press-quote__page:hover { transform: translateY(-4px) rotate(-1deg); }
-.press-quote__page img { display: block; width: 100%; height: auto; }
-.press-quote__body { display: flex; flex-direction: column; gap: 14px; }
-.press-quote__kicker { font-size: .66rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); }
-.press-quote__q { margin: 0; font-size: 1.15rem; font-weight: 600; line-height: 1.4; letter-spacing: -.01em; color: var(--ink); text-wrap: balance; }
-.press-quote blockquote { margin: 0; padding-left: 18px; border-left: 2px solid var(--accent); font-size: 1rem; line-height: 1.7; color: var(--ink-2); }
-.press-quote figcaption { font-size: .85rem; font-weight: 700; color: var(--ink); }
-.press-quote figcaption span { display: block; font-weight: 500; color: var(--ink-3); margin-top: 2px; }
-.press-quote__link { align-self: flex-start; font-size: .72rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--ink); border-bottom: 1px solid var(--accent); padding-bottom: 4px; }
-@media (max-width: 760px) {
-  .press-quote { grid-template-columns: 1fr; gap: 28px; padding: 28px 22px; margin-bottom: 48px; }
-  .press-quote__page { max-width: 180px; }
-}
 
 /* ---------- Záliby ---------- */
 .hobbies { padding: 128px 0; background: var(--bg-alt); }
