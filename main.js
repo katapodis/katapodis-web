@@ -174,6 +174,25 @@
     });
   });
 
+  /* ---------- YouTube: automatické přehrání (bez zvuku) po nascrollování ---------- */
+  document.querySelectorAll('[data-yt-autoplay]').forEach(function (box) {
+    var id = box.getAttribute('data-yt-autoplay');
+    function load() {
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + id +
+        '?autoplay=1&mute=1&playsinline=1&loop=1&playlist=' + id + '&rel=0';
+      iframe.title = box.getAttribute('data-title') || 'Video';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      iframe.allowFullscreen = true;
+      box.appendChild(iframe);
+    }
+    if (!('IntersectionObserver' in window)) { load(); return; }
+    var io = new IntersectionObserver(function (entries) {
+      if (entries.some(function (e) { return e.isIntersecting; })) { io.disconnect(); load(); }
+    }, { threshold: 0.4 });
+    io.observe(box);
+  });
+
   /* ---------- Fotogalerie (cesty + auta) se sdíleným lightboxem ---------- */
   (function () {
     var lb = document.getElementById('lightbox');
@@ -280,7 +299,7 @@
     if (!('IntersectionObserver' in window)) return;
     // skrytý výchozí stav .rvl se aktivuje až tady → bez JS zůstane obsah viditelný
     document.documentElement.classList.add('reveal-ready');
-    var SEL = '.section-head, .scard, .solve__photo, .solve__main, .sol, ' +
+    var SEL = '.section-head, .scard, .solve__video, .solve__main, .sol, ' +
       '.about-me__photo, .about-me__body, .mcard, .media-more, .feature__text, ' +
       '.travel-stats, .photogrid, .story__text, .faq__item, .cta__inner, ' +
       '.stat, .proof__media, .voices__lead, .voice, .talk, .presskit';

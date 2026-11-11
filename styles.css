@@ -212,17 +212,14 @@ a:hover { color: var(--accent); }
 .about { padding: 128px 0; }
 
 /* Sekce „Co pomáhám řešit" — foto vlevo (plný sloupec), vpravo nadpis + intro + seznam */
-.solve { display: grid; grid-template-columns: .78fr 1.22fr; gap: 64px; align-items: stretch; }
-.solve__photo { position: relative; min-height: 100%; }
-.solve__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+.solve { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: center; }
+.solve__video { box-shadow: 0 30px 60px -34px rgba(20,15,20,.5); }
 .about__statement { font-size: clamp(1.9rem, 3.6vw, 2.7rem); text-transform: none; letter-spacing: -.02em; line-height: 1.1; margin: 0 0 24px; }
 .solve__main > p { font-size: 1.06rem; line-height: 1.75; color: var(--ink-2); margin: 0 0 18px; }
 .solve__main strong { color: var(--ink); font-weight: 700; }
 
-.solve__list { display: flex; flex-direction: column; margin-top: 44px; }
-.sol { display: grid; grid-template-columns: auto 1fr; gap: 30px; padding: 34px 0; border-top: 1px solid var(--line-2); }
-.sol:first-child { border-top: 1px solid var(--ink); }
-.sol:last-child { border-bottom: 1px solid var(--line-2); }
+.solve__list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 48px; margin-top: 72px; border-top: 1px solid var(--ink); }
+.sol { display: grid; grid-template-columns: 1fr; gap: 14px; padding: 34px 0 0; }
 .sol__num { font-size: .78rem; font-weight: 700; letter-spacing: .2em; color: var(--accent); padding-top: 5px; }
 .sol h3 { font-size: 1.2rem; text-transform: uppercase; letter-spacing: -.01em; margin: 0 0 14px; }
 .sol p { font-size: .98rem; line-height: 1.7; color: var(--ink-2); margin: 0 0 12px; }
@@ -433,10 +430,9 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
   .hero__inner { grid-template-columns: 1fr; gap: 44px; }
   .hero__media { order: -1; max-width: 360px; }
   .solve { grid-template-columns: 1fr; gap: 40px; }
-  .solve__photo { position: static; max-width: 360px; }
-  .solve__photo img { position: static; aspect-ratio: 4 / 5; height: auto; }
-  .solve__list { margin-top: 32px; }
-  .sol { gap: 22px; }
+  .solve__list { grid-template-columns: 1fr; margin-top: 40px; }
+  .sol { padding: 28px 0; border-bottom: 1px solid var(--line-2); }
+  .sol:last-child { border-bottom: 0; }
   .about-me__grid { grid-template-columns: 1fr; gap: 40px; }
   .about-me__photo { max-width: 380px; }
   .feature--cars, .story { grid-template-columns: 1fr; }
@@ -588,7 +584,6 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
   .story__video .story__note { margin-top: 0 !important; }
 
   /* Číslované bloky Co řeším — číslo jako overline nad nadpisem */
-  .sol { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
   .sol__num { padding-top: 0; }
 
   /* Statistiky cest — vizuální oddech mezi odstavci */
@@ -645,12 +640,12 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
 .reveal-ready .rvl.is-in { opacity: 1; transform: none; }
 /* Fotky se odkryjí „clonou“ zdola nahoru + jemný dojezd zoomu (luxusní reveal) */
 /* clip-path je na <img>, ne na pozorovaném kontejneru — IntersectionObserver by oříznutý prvek nezachytil */
-.reveal-ready .solve__photo.rvl, .reveal-ready .about-me__photo.rvl { opacity: 1; transform: none; overflow: hidden; }
-.reveal-ready .solve__photo.rvl img, .reveal-ready .about-me__photo.rvl img {
+.reveal-ready .about-me__photo.rvl { opacity: 1; transform: none; overflow: hidden; }
+.reveal-ready .about-me__photo.rvl img {
   clip-path: inset(100% 0 0 0); transform: scale(1.12);
   transition: clip-path 1.3s cubic-bezier(.77,0,.18,1), transform 1.8s cubic-bezier(.22,.61,.36,1);
 }
-.reveal-ready .solve__photo.rvl.is-in img, .reveal-ready .about-me__photo.rvl.is-in img { clip-path: inset(0 0 0 0); transform: none; }
+.reveal-ready .about-me__photo.rvl.is-in img { clip-path: inset(0 0 0 0); transform: none; }
 
 @media (prefers-reduced-motion: no-preference) {
   /* Vstupní animace hero po načtení — jemný fade-up se staggerem */
