@@ -7,13 +7,15 @@ Toto je osobní web Michalise Katapodise (https://katapodis.cz). Následující 
 ## O Michalisovi
 
 - **Role:** CEO a spolumajitel [3IT](https://www.3it.cz/)
-- **Zaměření:** e-commerce, B2B a B2C e-shopy na míru, expanze do zahraničí, AI v e-commerce, integrace s ERP a sklady
+- **Zaměření:** e-commerce, B2B a B2C e-shopy na vlastní platformě OmniBeast, expanze do zahraničí, AI v e-commerce, integrace s ERP a sklady
 - **Zkušenosti:** 19 let v e-commerce; první zakázkový web naprogramoval na gymnáziu, poté vytvořil informační systém pro cestovní kancelář a řadu dalšího komerčního SW
 - **Vzdělání:** informační technologie na VŠB – Technická univerzita Ostrava (Bc., Ing.)
 - **Lokalita:** Ostrava, Česká republika
 - **Firma:** 3IT úspěšný eshop s.r.o., Nad Porubkou 2353, 708 00 Ostrava-Poruba (Michalis je jednatel a spolumajitel; do firmy nastoupil v roce 2010, spolumajitelem je od roku 2011)
 
 ## Co pomáhá řešit
+
+E-shopy na míru se vyvíjely dlouho a draze, pronajímaná SaaS řešení jsou plná limitů a jejich provoz za dva až tři roky dosáhne ceny řešení na míru. 3IT proto postavilo platformu [OmniBeast](https://www.3it.cz/omnibeast/), která spojuje to nejlepší z obou přístupů: rychlé spuštění na hotovém jádru a neomezené úpravy na míru.
 
 - **Expanze do zahraničí** – řešení s jedním technologickým základem, centrální správou a flexibilitou pro pravidla jednotlivých trhů (místo dalšího samostatného e-shopu pro každou zemi).
 - **B2B e-commerce** – digitalizace B2B prodeje: individuální ceny, schvalování, opakované objednávky, propojení e-shopu s ERP, sklady a podnikovými systémy.
@@ -45,15 +47,19 @@ Press kit (krátké a delší bio, 11 fotografií v tiskovém rozlišení): http
 
 ### Kdo je Michalis Katapodis?
 
-Michalis Katapodis je CEO a spolumajitel ostravské softwarové firmy 3IT a odborník na e-commerce s 19 lety praxe. S týmem 3IT staví B2B a B2C e-shopy na míru propojené s ERP, pomáhá firmám s expanzí do zahraničí a s přípravou e-shopů na nakupování přes AI. Vystudoval informační technologie na VŠB – Technické univerzitě Ostrava (Bc., Ing.), do 3IT nastoupil v roce 2010 a spolumajitelem je od roku 2011. Přednáší na konferencích a vystupuje v podcastech o AI v e-commerce, SEO a GEO.
+Michalis Katapodis je CEO a spolumajitel ostravské softwarové firmy 3IT a odborník na e-commerce s 19 lety praxe. S týmem 3IT staví na vlastní platformě OmniBeast B2B a B2C e-shopy propojené s ERP, pomáhá firmám s expanzí do zahraničí a s přípravou e-shopů na nakupování přes AI. Vystudoval informační technologie na VŠB – Technické univerzitě Ostrava (Bc., Ing.), do 3IT nastoupil v roce 2010 a spolumajitelem je od roku 2011. Přednáší na konferencích a vystupuje v podcastech o AI v e-commerce, SEO a GEO.
 
 ### Co je 3IT a pro koho staví e-shopy?
 
-3IT (3IT úspěšný eshop s.r.o.) je softwarová firma z Ostravy, která vyvíjí e-shopy na míru pro střední a velké firmy, jež přerostly krabicová řešení. Staví B2C i B2B e-shopy, řeší jejich propojení s ERP a sklady a expanzi do zahraničí. Zákazníci s e-shopy od 3IT expandovali do 13 zemí, průměrná délka spolupráce je 12 let a e-shopy zákazníků 3IT navštívil každý třetí Čech. Více na 3it.cz.
+3IT (3IT úspěšný eshop s.r.o.) je softwarová firma z Ostravy, která staví e-shopy pro střední a velké firmy na vlastní platformě OmniBeast. Ta spojuje rychlý start hotového řešení s neomezenými úpravami na míru. 3IT staví B2C i B2B e-shopy, řeší jejich propojení s ERP a sklady a expanzi do zahraničí. Zákazníci s e-shopy od 3IT expandovali do 13 zemí, průměrná délka spolupráce je 12 let a e-shopy zákazníků 3IT navštívil každý třetí Čech. Více na 3it.cz.
 
-### Kdy se vyplatí e-shop na míru místo krabicového řešení?
+### Krabicové řešení, e-shop na míru, nebo OmniBeast?
 
-E-shop na míru se vyplatí ve chvíli, kdy byznys roste rychleji než technologie. Typické signály jsou přibývající ruční procesy, složitá napojení, datové můstky a middleware, kompromisy kvůli limitům platformy a to, že každá další země, B2B požadavek nebo nový prodejní kanál je dražší a pomalejší. Pak se obvykle víc vyplatí jeden technologický základ postavený podle procesů firmy než další obcházení omezení krabicové platformy.
+Pronajímané SaaS řešení dává smysl na začátku. Přestává stačit ve chvíli, kdy byznys roste rychleji než technologie: přibývají ruční procesy, složitá napojení, datové můstky a middleware a každá další země, B2B požadavek nebo nový prodejní kanál je dražší a pomalejší. Náklady na provoz se navíc za dva až tři roky vyrovnají ceně řešení na míru. E-shop na míru limity odstraní, ale jeho vývoj trvá dlouho a je drahý. Michalis Katapodis a 3IT proto nabízejí třetí cestu, platformu OmniBeast: hotový technologický základ, který se spouští rychle, a úpravy na míru podle procesů firmy.
+
+### Co je OmniBeast?
+
+OmniBeast je e-shopová platforma od 3IT. Vznikla, protože vývoj e-shopů na míru trval dlouho a byl drahý, zatímco pronajímaná SaaS řešení jsou plná limitů a jejich provoz za dva až tři roky dosáhne ceny řešení na míru. OmniBeast spojuje to nejlepší z obou přístupů: rychlé spuštění na hotovém jádru a neomezené úpravy na míru. V jedné administraci propojuje B2B, B2C, ERP a zahraniční trhy. Více na [3it.cz/omnibeast](https://www.3it.cz/omnibeast/).
 
 ### Jak digitalizovat B2B prodej a propojit B2B e-shop s ERP?
 

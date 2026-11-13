@@ -225,6 +225,14 @@ a:hover { color: var(--accent); }
 .sol p { font-size: .98rem; line-height: 1.7; color: var(--ink-2); margin: 0 0 12px; }
 .sol p:last-child { margin-bottom: 0; }
 
+/* Blok „Proč jsme postavili OmniBeast" pod třemi pilíři */
+.why { display: grid; grid-template-columns: 1fr 1.6fr; gap: 64px; margin-top: 72px; padding-top: 44px; border-top: 1px solid var(--ink); }
+.why__head h3 { font-size: clamp(1.5rem, 2.6vw, 2rem); text-transform: none; letter-spacing: -.02em; line-height: 1.15; }
+.why__body p { font-size: 1.06rem; line-height: 1.75; color: var(--ink-2); margin: 0 0 18px; }
+.why__body strong { color: var(--ink); font-weight: 700; }
+.why__link { display: inline-block; margin-top: 10px; font-size: .72rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); border-bottom: 1px solid var(--accent); padding-bottom: 4px; }
+.why__link:hover { color: var(--accent-dark); border-color: var(--accent-dark); }
+
 /* Sekce „O mně — moje cesta" (šedý pruh) */
 .about-me { padding: 128px 0; background: var(--bg-alt); }
 .about-me__head { margin-bottom: 52px; }
@@ -431,6 +439,7 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }   /* zámek scrollu p�
   .hero__media { order: -1; max-width: 360px; }
   .solve { grid-template-columns: 1fr; gap: 40px; }
   .solve__list { grid-template-columns: 1fr; margin-top: 40px; }
+  .why { grid-template-columns: 1fr; gap: 20px; margin-top: 40px; padding-top: 36px; }
   .sol { padding: 28px 0; border-bottom: 1px solid var(--line-2); }
   .sol:last-child { border-bottom: 0; }
   .about-me__grid { grid-template-columns: 1fr; gap: 40px; }
