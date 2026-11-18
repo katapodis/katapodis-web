@@ -1,5 +1,25 @@
 window.MEDIA_ITEMS = [
  {
+  "type": "podcast",
+  "title": "Převzal IT firmu bez klientů, dnes dělá milionové e-shopy",
+  "publishedAt": "2026-11-18",
+  "dateLabel": "18. 11. 2026",
+  "datePrecision": "day",
+  "medium": "Bod Obratu – Studio POSITIV",
+  "url": "https://www.youtube.com/watch?v=jN1BJSzuGKo",
+  "image": "/images/media/bod-obratu-prevzal-it-firmu.webp"
+ },
+ {
+  "type": "clanek",
+  "title": "Spustili jsme OmniBeast",
+  "publishedAt": "2026-11-03",
+  "dateLabel": "3. 11. 2026",
+  "datePrecision": "day",
+  "medium": "ČTK / České noviny a další média",
+  "url": "https://www.ceskenoviny.cz/tiskove/zpravy/ostravske-3it-spousti-omnibeast-e-shop-ktery-neprerostete/2894704",
+  "image": "/images/media/spustili-jsme-omnibeast.webp"
+ },
+ {
   "type": "prednaska",
   "title": "Často své silné stránky nevidíme, přijdou nám samozřejmé, ale nejsou",
   "publishedAt": "2026-10-22",

@@ -19,7 +19,7 @@ E-shopy na míru se vyvíjely dlouho a draze, pronajímaná SaaS řešení jsou 
 
 - **Expanze do zahraničí** – řešení s jedním technologickým základem, centrální správou a flexibilitou pro pravidla jednotlivých trhů (místo dalšího samostatného e-shopu pro každou zemi).
 - **B2B e-commerce** – digitalizace B2B prodeje: individuální ceny, schvalování, opakované objednávky, propojení e-shopu s ERP, sklady a podnikovými systémy.
-- **AI v e-commerce** – příprava kvalitních produktových dat, otevřených rozhraní, procesů a spolehlivého technologického základu na nový způsob, jakým budou zákazníci nakupovat.
+- **AI v e-commerce** – příprava kvalitních produktových dat, otevřených rozhraní, procesů a spolehlivého technologického základu na nový způsob, jakým budou zákazníci nakupovat. Platforma OmniBeast je proto postavená jako AI-first: vzhled e-shopu lze upravit popisem bez programování a díky API a MCP je otevřená AI nástrojům.
 
 ## Kontakt a sociální sítě
 
@@ -79,7 +79,7 @@ Zákazníci 3IT oceňují hlavně lidský přístup, rychlou komunikaci a to, ž
 
 ### Lze Michalise Katapodise pozvat na přednášku, do podcastu nebo požádat o odborný komentář?
 
-Ano. Michalis Katapodis přednáší na konferencích a firemních akcích, hostuje v podcastech a poskytuje odborné komentáře médiím. Témata: AI v e-commerce, SEO a GEO, expanze e-shopů do zahraničí, B2B e-commerce a propojení s ERP, firemní kultura a silné stránky. Vystoupil například na Konferenci Hrdinů podnikání, v podcastech AI Univerzity a Socials Podcast a na webináři Advisio, jeho komentář otiskl magazín POSITIV. Press kit s bio a fotografiemi je ke stažení na katapodis.cz/press.
+Ano. Michalis Katapodis přednáší na konferencích a firemních akcích, hostuje v podcastech a poskytuje odborné komentáře médiím. Témata: AI v e-commerce, SEO a GEO, expanze e-shopů do zahraničí, B2B e-commerce a propojení s ERP, firemní kultura a silné stránky. Vystoupil například na Konferenci Hrdinů podnikání, v podcastech Bod Obratu, AI Univerzity a Socials Podcast a na webináři Advisio, jeho komentář otiskl magazín POSITIV. Press kit s bio a fotografiemi je ke stažení na katapodis.cz/press.
 
 ### Jak kontaktovat Michalise Katapodise a domluvit si konzultaci?
 
@@ -89,6 +89,7 @@ Nezávaznou třicetiminutovou konzultaci zdarma si lze rezervovat na cal.com/kat
 
 ### Články
 
+- [Spustili jsme OmniBeast](https://www.ceskenoviny.cz/tiskove/zpravy/ostravske-3it-spousti-omnibeast-e-shop-ktery-neprerostete/2894704) – tisková zpráva 3IT „Ostravské 3IT spouští OmniBeast: e-shop, který nepřerostete“, ČTK / České noviny, 3. 11. 2026; převzaly ji také Hrot24, Finmag, Peníze.cz, Metro.cz, TV Barrandov, Svět hospodářství, Media24, Ekonews, AktuálníZprávy.cz a i-lifestyle.cz
 - [Agentické nakupování půl roku poté: ChatGPT ukončil svůj checkout. Objednávky z AI se přesto zdvojnásobily](https://www.3it.cz/technologie-a-vyvoj/agenticke-nakupovani-pul-roku-pote-chatgpt-ukoncil-svuj-checkout-objednavky-z-ai-se-presto-zdvojnasobily/) – 3IT.cz, 8. 9. 2026
 - [ChatGPT Ads pro e-shopy: jak technicky připravit e-shop na reklamu v ChatGPT](https://www.3it.cz/technologie-a-vyvoj/chatgpt-ads-pro-e-shopy-jak-technicky-pripravit-e-shop-na-reklamu-v-chatgpt/) – 3IT.cz, 1. 9. 2026
 - [E-shop po sezóně: co opravit dřív, než přijde další nákupní špička](https://www.3it.cz/vzdelavani/e-shop-po-sezone-co-opravit-driv-nez-prijde-dalsi-nakupni-spicka/) – 3IT.cz, 3. 8. 2026
@@ -121,6 +122,7 @@ Nezávaznou třicetiminutovou konzultaci zdarma si lze rezervovat na cal.com/kat
 
 ### Podcasty
 
+- [Převzal IT firmu bez klientů, dnes dělá milionové e-shopy](https://www.youtube.com/watch?v=jN1BJSzuGKo) – Bod Obratu – Studio POSITIV, 18. 11. 2026
 - [Jak dostat e-shop do doporučení ChatGPT](https://www.youtube.com/watch?v=x0daUjYRElY) – AI Univerzita, 14. 10. 2026
 - [Bude vás AI doporučovat? Jak připravit e-shop na novou éru vyhledávání](https://www.advisio.cz/skoleni/bude-vas-ai-doporucovat-jak-pripravit-e-shop-na-novou-eru-vyhledavani/) – Webinář Advisio, 10. 9. 2026
 - [Speciál: 5 expertů, jeden společný závěr o budoucnosti podnikání](https://podcasts.apple.com/cz/podcast/117-speci%C3%A1l-5-expert%C5%AF-jeden-spole%C4%8Dn%C3%BD-z%C3%A1v%C4%9Br-o-budoucnosti/id1710382207?i=1000783073079) – Socials Podcast #117, 13. 8. 2026

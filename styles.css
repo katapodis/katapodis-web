@@ -219,7 +219,7 @@ a:hover { color: var(--accent); }
 .solve__main strong { color: var(--ink); font-weight: 700; }
 
 .solve__list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 48px; margin-top: 72px; border-top: 1px solid var(--ink); }
-.sol { display: grid; grid-template-columns: 1fr; gap: 14px; padding: 34px 0 0; }
+.sol { display: grid; grid-template-columns: 1fr; gap: 14px; padding: 34px 0 0; align-content: start; }
 .sol__num { font-size: .78rem; font-weight: 700; letter-spacing: .2em; color: var(--accent); padding-top: 5px; }
 .sol h3 { font-size: 1.2rem; text-transform: uppercase; letter-spacing: -.01em; margin: 0 0 14px; }
 .sol p { font-size: .98rem; line-height: 1.7; color: var(--ink-2); margin: 0 0 12px; }
